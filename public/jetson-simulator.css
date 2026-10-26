@@ -1,12 +1,12 @@
-.component[data-type="jetson"]{width:500px;background:transparent!important;border:0!important}
-.component[data-type="jetson"] .component-header{background:#173c2b!important;border:1px solid #45785c!important;padding:10px 14px!important;font-size:12px}
+.component[data-type="jetson"]{width:500px;background:transparent!important;border:0!important;filter:drop-shadow(0 16px 28px rgba(0,0,0,.6))}
+.component[data-type="jetson"] .component-header{background:linear-gradient(135deg,#213b23,#132615)!important;border:1px solid #65a30d!important;padding:10px 14px!important;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
 .component[data-type="jetson"] .jetson-board{box-sizing:border-box;position:relative;width:500px;height:330px;min-width:500px;display:block;padding:0!important;border:0!important;background:transparent url("/jetson-real.svg") center/100% 100% no-repeat!important;box-shadow:none!important}
 .component[data-type="jetson"] .jetson-details{display:none}
 .component[data-type="jetson"] .jetson-header-block{box-sizing:border-box;position:absolute;left:45px;top:20px;display:flex;flex-direction:row;width:300px;height:28px;gap:5px;padding:0;background:transparent;border:0;box-shadow:none;z-index:3}
 .component[data-type="jetson"] .jetson-pin-row{position:relative;display:flex;flex-direction:column-reverse;gap:5px;width:10px;flex-shrink:0}
 .component[data-type="jetson"] .jetson-pin-label{display:none}
-.component[data-type="jetson"] .jetson-header-block .pin{box-sizing:border-box;display:block;flex-shrink:0;width:10px;height:10px;margin:0;background:#d7ba66!important;border:2px solid #817037!important;border-radius:1px!important;box-shadow:0 1px 2px #000;cursor:crosshair}
-.component[data-type="jetson"] .jetson-pin-row:hover .jetson-pin-label{display:block;position:absolute;left:-13px;background:#14202e;border:1px solid #648276;border-radius:3px;color:#fff;white-space:nowrap;width:36px;text-align:center;z-index:5;padding:2px;font:10px monospace;pointer-events:none}
+.component[data-type="jetson"] .jetson-header-block .pin{box-sizing:border-box;display:block;flex-shrink:0;width:10px;height:10px;margin:0;background:#eab308!important;border:2px solid #713f12!important;border-radius:1px!important;box-shadow:0 1px 2px #000;cursor:crosshair}
+.component[data-type="jetson"] .jetson-pin-row:hover .jetson-pin-label{display:block;position:absolute;left:-13px;background:#0f172a;border:1px solid #84cc16;border-radius:4px;color:#fff;white-space:nowrap;width:38px;text-align:center;z-index:5;padding:2px;font:700 10px monospace;pointer-events:none;box-shadow:0 4px 10px rgba(0,0,0,.5)}
 .component[data-type="jetson"] .jetson-pin-row:hover .jetson-pin-label.left{top:32px}
 .component[data-type="jetson"] .jetson-pin-row:hover .jetson-pin-label.right{bottom:32px}
 .component[data-type="jetson"] .pin[data-level="high"]{background:#6ee7b7!important;outline:2px solid #34d399}
@@ -15,7 +15,7 @@
 .component[data-type="jetson"] .jetson-header-block{left:74px;top:53px;width:300px;height:20px;gap:8px}
 .component[data-type="jetson"] .jetson-pin-row{width:7px;gap:5px}
 .component[data-type="jetson"] .jetson-header-block .pin{width:7px;height:7px;border-width:2px}
-.component[data-type="jetson"] .component-header{background:#213b23!important;border-color:#548133!important}
+.component[data-type="jetson"] .component-header{background:linear-gradient(135deg,#213b23,#132615)!important;border-color:#65a30d!important}
 #simulator-layout{min-width:1180px}#sidebar{width:205px}#editor-panel{width:340px}#workspace{overflow:auto;min-width:620px}
 .jetson-help{position:absolute;top:12px;left:20px;max-width:570px;color:#d9e7cb;font:11px/1.6 system-ui;pointer-events:none}
 #toolbar{min-width:1180px;flex-wrap:wrap;height:auto!important;min-height:76px;gap:8px;padding:10px!important}body{overflow:auto}

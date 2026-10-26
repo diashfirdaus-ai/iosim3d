@@ -13,26 +13,38 @@
 @media(max-width:700px){.auth-card{padding:28px}.auth-card h1{font-size:32px}.cloud-account span{max-width:150px;overflow:hidden;text-overflow:ellipsis}}
 .pin[data-level="high"]{background:#34d399!important;border-color:#a7f3d0!important;outline:2px solid #34d399}.pin[data-level="low"]{background:#334155!important;border-color:#94a3b8!important}
 
-/* Tampilan papan realistis. Hanya lapisan gambar dan posisi pin visual. */
-.component[data-type="esp32"]{width:260px;min-width:260px;background:transparent!important;border:0!important}
-.component[data-type="esp32"] .component-header{background:#172d38!important;border:1px solid #395967!important;padding:10px 14px!important;font-size:12px}
+/* Tampilan papan realistis 3D. Hanya lapisan gambar dan posisi pin visual. */
+.component[data-type="arduino"]{width:280px;min-width:280px;background:transparent!important;border:0!important;filter:drop-shadow(0 16px 28px rgba(0,0,0,.55))}
+.component[data-type="arduino"] .component-header{background:linear-gradient(135deg,#00686b,#004447)!important;border:1px solid #2bb5b8!important;padding:10px 14px!important;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
+.component[data-type="arduino"] .esp32-board{box-sizing:border-box;position:relative;width:280px;min-width:280px!important;height:440px;padding:108px 14px 0!important;background:transparent url("/arduino-real.svg") center/100% 100% no-repeat!important;border:0!important;display:flex;justify-content:space-between;align-items:flex-start;gap:0;box-shadow:none!important}
+.component[data-type="arduino"] .esp32-board>.pin-group:first-child{margin-top:46px;gap:6px!important}
+.component[data-type="arduino"] .esp32-board>.pin-group:first-child .esp32-pin-row:nth-child(5){margin-bottom:20px}
+.component[data-type="arduino"] .esp32-board>.pin-group.right{gap:6px!important}
+.component[data-type="arduino"] .esp32-board>.pin-group.right .esp32-pin-row:nth-child(6){margin-bottom:14px}
+.component[data-type="arduino"] .esp32-pin-row{height:16px;margin:0;gap:6px}
+.component[data-type="arduino"] .esp32-pin-label{font:700 8.5px/16px monospace;width:34px;color:#f1f5f9;text-shadow:0 1px 2px #000}
+.component[data-type="arduino"] .esp32-board .pin{box-sizing:border-box;width:12px;height:12px;flex-shrink:0;background:#0f172a!important;border:2.5px solid #eab308!important;border-radius:3px!important;box-shadow:inset 0 1px 2px #000,0 1px 3px rgba(0,0,0,.6)!important}
+.component[data-type="arduino"] .pin[data-level="high"]{background:#34d399!important;border-color:#a7f3d0!important;outline:2px solid #34d399}
+.component[data-type="arduino"] .pin[data-level="low"]{background:#1e293b!important;outline:0}
+.component[data-type="esp32"]{width:260px;min-width:260px;background:transparent!important;border:0!important;filter:drop-shadow(0 16px 28px rgba(0,0,0,.55))}
+.component[data-type="esp32"] .component-header{background:linear-gradient(135deg,#1e293b,#0f172a)!important;border:1px solid #475569!important;padding:10px 14px!important;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
 .component[data-type="esp32"] .esp32-board{box-sizing:border-box;position:relative;width:260px;min-width:260px!important;height:480px;padding:94px 10px 0!important;background:transparent url("/esp32-real.svg") center/100% 100% no-repeat!important;border:0!important;display:flex;justify-content:space-between;align-items:flex-start;gap:0;box-shadow:none!important}
 .component[data-type="esp32"] .esp32-board:after{display:none}
 .component[data-type="esp32"] .esp32-board>.pin-group{position:relative;gap:7px!important}
 .component[data-type="esp32"] .esp32-pin-row{height:16px;margin:0;gap:6px}
-.component[data-type="esp32"] .esp32-pin-label{font:600 8px/16px monospace;width:27px;color:#e1e5dd}
-.component[data-type="esp32"] .esp32-board .pin{box-sizing:border-box;width:12px;height:12px;flex-shrink:0;background:#151d20!important;border:3px solid #bc9e5f!important;border-radius:50%!important}
+.component[data-type="esp32"] .esp32-pin-label{font:700 8.5px/16px monospace;width:28px;color:#f1f5f9;text-shadow:0 1px 2px #000}
+.component[data-type="esp32"] .esp32-board .pin{box-sizing:border-box;width:12px;height:12px;flex-shrink:0;background:#151d20!important;border:3px solid #eab308!important;border-radius:50%!important;box-shadow:0 1px 3px rgba(0,0,0,.7)!important}
 .component[data-type="esp32"] .pin[data-level="high"]{background:#6ee7b7!important;outline:2px solid #34d399}
 .component[data-type="esp32"] .pin[data-level="low"]{background:#14272c!important;outline:0}
-.component[data-type="raspi"]{width:500px;background:transparent!important;border:0!important}
-.component[data-type="raspi"] .component-header{background:#173c2b!important;border:1px solid #45785c!important;padding:10px 14px!important;font-size:12px}
+.component[data-type="raspi"]{width:500px;background:transparent!important;border:0!important;filter:drop-shadow(0 16px 28px rgba(0,0,0,.55))}
+.component[data-type="raspi"] .component-header{background:linear-gradient(135deg,#196f3d,#0e4b27)!important;border:1px solid #58d68d!important;padding:10px 14px!important;font-size:12px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
 .component[data-type="raspi"] .raspi-board{box-sizing:border-box;position:relative;width:500px;height:330px;min-width:500px;display:block;padding:0!important;border:0!important;background:transparent url("/raspi-real.svg") center/100% 100% no-repeat!important;box-shadow:none!important}
 .component[data-type="raspi"] .raspi-details{display:none}
 .component[data-type="raspi"] .raspi-header-block{box-sizing:border-box;position:absolute;left:45px;top:20px;display:flex;flex-direction:row;width:300px;height:28px;gap:5px;padding:0;background:transparent;border:0;box-shadow:none;z-index:3}
 .component[data-type="raspi"] .raspi-pin-row{position:relative;display:flex;flex-direction:column-reverse;gap:5px;width:10px;flex-shrink:0}
 .component[data-type="raspi"] .raspi-pin-label{display:none}
-.component[data-type="raspi"] .raspi-header-block .pin{box-sizing:border-box;display:block;flex-shrink:0;width:10px;height:10px;margin:0;background:#d7ba66!important;border:2px solid #817037!important;border-radius:1px!important;box-shadow:0 1px 2px #000;cursor:crosshair}
-.component[data-type="raspi"] .raspi-pin-row:hover .raspi-pin-label{display:block;position:absolute;left:-13px;background:#14202e;border:1px solid #648276;border-radius:3px;color:#fff;white-space:nowrap;width:36px;text-align:center;z-index:5;padding:2px;font:10px monospace;pointer-events:none}
+.component[data-type="raspi"] .raspi-header-block .pin{box-sizing:border-box;display:block;flex-shrink:0;width:10px;height:10px;margin:0;background:#eab308!important;border:2px solid #713f12!important;border-radius:2px!important;box-shadow:0 1px 2px #000;cursor:crosshair}
+.component[data-type="raspi"] .raspi-pin-row:hover .raspi-pin-label{display:block;position:absolute;left:-13px;background:#0f172a;border:1px solid #58d68d;border-radius:4px;color:#fff;white-space:nowrap;width:38px;text-align:center;z-index:5;padding:2px;font:700 10px monospace;pointer-events:none;box-shadow:0 4px 10px rgba(0,0,0,.5)}
 .component[data-type="raspi"] .raspi-pin-row:hover .raspi-pin-label.left{top:32px}
 .component[data-type="raspi"] .raspi-pin-row:hover .raspi-pin-label.right{bottom:32px}
 .component[data-type="raspi"] .pin[data-level="high"]{background:#6ee7b7!important;outline:2px solid #34d399}

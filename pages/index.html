@@ -432,20 +432,21 @@
     <!-- Device selector cards -->
     <div class="cards">
 
-      <!-- ESP32 Card -->
+      <!-- ESP32 & Arduino Card -->
       <a href="esp.html" class="device-card card-esp" id="card-esp">
-        <div class="card-icon-wrap">
-          <i class="fa-solid fa-microchip"></i>
+        <div style="display:flex;align-items:center;justify-content:center;gap:10px;height:120px;z-index:3;">
+          <img src="/esp32-real.svg" alt="Ilustrasi 3D ESP32 DevKit V1" style="width:82px;height:120px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.6))">
+          <img src="/arduino-real.svg" alt="Ilustrasi 3D Arduino Uno R3" style="width:88px;height:120px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.6))">
         </div>
-        <div class="card-name">ESP32</div>
+        <div class="card-name">ESP32 &amp; Arduino</div>
         <p class="card-desc">
-          Simulasi mikrokontroler ESP32 dengan sensor virtual, GPIO, WiFi, dan komponen elektronik yang dapat disambungkan secara drag-and-drop.
+          Simulasi mikrokontroler ESP32 &amp; Arduino Uno bentuk 3D realistis dengan sensor virtual, GPIO, WiFi, dan komponen drag-and-drop.
         </p>
         <div class="card-tags">
+          <span class="tag">3D Board</span>
           <span class="tag">Wi-Fi</span>
           <span class="tag">GPIO</span>
           <span class="tag">Sensor</span>
-          <span class="tag">WebSocket</span>
         </div>
         <button class="card-btn">
           Mulai Simulasi <i class="fa-solid fa-arrow-right"></i>
@@ -454,25 +455,23 @@
 
       <!-- Raspberry Pi Card -->
       <a href="raspi.html" class="device-card card-raspi" id="card-raspi">
-        <div class="card-icon-wrap">
-          <i class="fa-brands fa-raspberry-pi"></i>
-        </div>
+        <img src="/raspi-real.svg" alt="Ilustrasi 3D Raspberry Pi 4 Model B" style="width:180px;height:120px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.6));z-index:3;">
         <div class="card-name">Raspberry Pi</div>
         <p class="card-desc">
-          Simulasi single-board computer Raspberry Pi lengkap dengan terminal Linux, GPIO, sensor, dan komunikasi jaringan real-time.
+          Simulasi single-board computer Raspberry Pi 4 bentuk 3D lengkap dengan Python, GPIO 40-pin, sensor, dan komunikasi real-time.
         </p>
         <div class="card-tags">
+          <span class="tag">3D Board</span>
           <span class="tag">Linux</span>
           <span class="tag">GPIO</span>
           <span class="tag">Python</span>
-          <span class="tag">SSH</span>
         </div>
         <button class="card-btn">
           Mulai Simulasi <i class="fa-solid fa-arrow-right"></i>
         </button>
       </a>
 
-      <a href="jetson.html" class="device-card card-jetson" id="card-jetson"><img src="/jetson-real.svg" alt="Ilustrasi papan Jetson Nano Developer Kit" style="width:180px;height:120px;object-fit:contain"><div class="card-name">Jetson Nano</div><p class="card-desc">Rangkai komponen, sambungkan GPIO, dan jalankan kode Python pada papan Jetson Nano virtual.</p><div class="card-tags"><span class="tag">Edge AI</span><span class="tag">GPU</span><span class="tag">Kamera</span></div><span class="card-btn">Mulai Simulasi →</span></a>
+      <a href="jetson.html" class="device-card card-jetson" id="card-jetson"><img src="/jetson-real.svg" alt="Ilustrasi papan Jetson Nano Developer Kit" style="width:180px;height:120px;object-fit:contain;filter:drop-shadow(0 8px 16px rgba(0,0,0,0.6));z-index:3"><div class="card-name">Jetson Nano</div><p class="card-desc">Rangkai komponen, sambungkan GPIO, dan jalankan kode Python pada papan Jetson Nano 3D virtual.</p><div class="card-tags"><span class="tag">3D Board</span><span class="tag">Edge AI</span><span class="tag">GPU</span></div><span class="card-btn">Mulai Simulasi →</span></a>
     </div>
 
     <!-- Footer -->

@@ -1,1 +1,175 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="480" viewBox="0 0 260 480"><title>ESP32 DevKit V1 30-pin</title><defs><linearGradient id="metal" x2="1" y2=".4"><stop stop-color="#7a8289"/><stop offset=".18" stop-color="#d4d8db"/><stop offset=".48" stop-color="#a7afb4"/><stop offset=".75" stop-color="#e0e3e4"/><stop offset="1" stop-color="#8b9398"/></linearGradient><linearGradient id="pcb" x2="1" y2="1"><stop stop-color="#20282b"/><stop offset="1" stop-color="#0c1215"/></linearGradient><pattern id="grain" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0 1h3" stroke="#fff" stroke-opacity=".04" stroke-width=".4"/></pattern></defs><rect x="6" y="4" width="248" height="472" rx="11" fill="url(#pcb)" stroke="#4a5455"/><rect x="7" y="5" width="246" height="470" rx="10" fill="url(#grain)"/><circle cx="23" cy="22" r="9" fill="#bfa66a"/><circle cx="23" cy="22" r="5" fill="#13191c"/><circle cx="23" cy="458" r="9" fill="#bfa66a"/><circle cx="23" cy="458" r="5" fill="#13191c"/><circle cx="237" cy="22" r="9" fill="#bfa66a"/><circle cx="237" cy="22" r="5" fill="#13191c"/><circle cx="237" cy="458" r="9" fill="#bfa66a"/><circle cx="237" cy="458" r="5" fill="#13191c"/><rect x="66" y="23" width="128" height="82" rx="2" fill="#171c1c"/><path d="M77 96V34h16v47h15V34h16v47h15V34h16v47h25V34" fill="none" stroke="#b8a676" stroke-width="3"/><rect x="64" y="115" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="115" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="128" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="128" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="141" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="141" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="154" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="154" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="167" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="167" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="180" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="180" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="193" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="193" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="206" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="206" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="219" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="219" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="232" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="232" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="245" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="245" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="64" y="258" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="186" y="258" width="10" height="6" rx="1" fill="#c5b68b"/><rect x="73" y="111" width="114" height="165" rx="2" fill="#313a3e" stroke="#c1c5c4"/><rect x="77" y="115" width="106" height="157" rx="2" fill="url(#metal)" stroke="#e1e4e3"/><text x="130" y="148" font-family="Arial,sans-serif" font-size="10" fill="#465054" text-anchor="middle">ESPRESSIF</text><text x="130" y="177" font-family="Arial,sans-serif" font-size="11" fill="#414a4e" text-anchor="middle">ESP-WROOM-32</text><text x="130" y="207" font-family="Arial,sans-serif" font-size="9" fill="#50595c" text-anchor="middle">Wi-Fi / BT / BLE</text><text x="130" y="232" font-family="Arial,sans-serif" font-size="18" fill="#657075" text-anchor="middle">CE   FCC</text><text x="130" y="253" font-family="Arial,sans-serif" font-size="6" fill="#515b5e" text-anchor="middle">2.4 GHz • 802.11 b/g/n</text><path d="M118 132a18 18 0 0 1 25 0m-21 4a12 12 0 0 1 17 0m-13 4a5 5 0 0 1 9 0" fill="none" stroke="#596368" stroke-width="1.5"/><text x="130" y="295" font-family="Arial,sans-serif" font-size="13" fill="#d7dfda" text-anchor="middle">ESP32 DEVKIT V1</text><text x="130" y="310" font-family="Arial,sans-serif" font-size="7" fill="#a2b3b0" text-anchor="middle">DOIT • 30 GPIO HEADER</text><rect x="75" y="324" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="75" y="327" width="5" height="6" rx="0" fill="#87755a"/><rect x="75" y="341" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="75" y="344" width="5" height="6" rx="0" fill="#87755a"/><rect x="75" y="372" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="75" y="375" width="5" height="6" rx="0" fill="#87755a"/><rect x="103" y="324" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="103" y="327" width="5" height="6" rx="0" fill="#87755a"/><rect x="103" y="341" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="103" y="344" width="5" height="6" rx="0" fill="#87755a"/><rect x="103" y="372" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="103" y="375" width="5" height="6" rx="0" fill="#87755a"/><rect x="167" y="324" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="167" y="327" width="5" height="6" rx="0" fill="#87755a"/><rect x="167" y="341" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="167" y="344" width="5" height="6" rx="0" fill="#87755a"/><rect x="167" y="372" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="167" y="375" width="5" height="6" rx="0" fill="#87755a"/><rect x="185" y="324" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="185" y="327" width="5" height="6" rx="0" fill="#87755a"/><rect x="185" y="341" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="185" y="344" width="5" height="6" rx="0" fill="#87755a"/><rect x="185" y="372" width="5" height="12" rx="1" fill="#a9aca4"/><rect x="185" y="375" width="5" height="6" rx="0" fill="#87755a"/><rect x="113" y="333" width="34" height="39" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="117" y="330" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="117" y="371" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="123" y="330" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="123" y="371" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="129" y="330" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="129" y="371" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="135" y="330" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="135" y="371" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="141" y="330" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="141" y="371" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="110" y="337" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="337" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="110" y="343" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="343" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="110" y="349" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="349" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="110" y="355" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="355" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="110" y="361" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="361" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="110" y="367" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="146" y="367" width="4" height="2" rx="0" fill="#a1a9aa"/><text x="130" y="354" font-family="Arial,sans-serif" font-size="6" fill="#87928e" text-anchor="middle">CP2102</text><rect x="164" y="353" width="24" height="23" rx="2" fill="#1a2023" stroke="#77817d"/><text x="176" y="366" font-family="Arial,sans-serif" font-size="5" fill="#c5cdc7" text-anchor="middle">3V3</text><rect x="85" y="390" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="88" y="390" width="6" height="5" rx="0" fill="#87755a"/><rect x="166" y="393" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="169" y="393" width="6" height="5" rx="0" fill="#87755a"/><rect x="95" y="312" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="98" y="312" width="6" height="5" rx="0" fill="#87755a"/><rect x="159" y="315" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="162" y="315" width="6" height="5" rx="0" fill="#87755a"/><rect x="66" y="408" width="24" height="30" rx="2" fill="url(#metal)" stroke="#5c6669"/><circle cx="78" cy="423" r="8" fill="#292f32" stroke="#525d62"/><text x="78" y="451" font-family="Arial,sans-serif" font-size="7" fill="#d1dbd5" text-anchor="middle">EN</text><rect x="177" y="408" width="24" height="30" rx="2" fill="url(#metal)" stroke="#5c6669"/><circle cx="189" cy="423" r="8" fill="#292f32" stroke="#525d62"/><text x="189" y="451" font-family="Arial,sans-serif" font-size="7" fill="#d1dbd5" text-anchor="middle">BOOT</text><rect x="104" y="444" width="52" height="34" rx="3" fill="url(#metal)" stroke="#e4e7e6"/><rect x="110" y="461" width="40" height="13" rx="2" fill="#252d31"/><rect x="117" y="466" width="26" height="3" rx="0" fill="#c8ae70"/><rect x="93" y="404" width="6" height="4" rx="1" fill="#db4855"/><text x="96" y="398" font-family="Arial,sans-serif" font-size="5" fill="#ddd" text-anchor="middle">PWR</text><g fill="none" stroke="#324743" stroke-width="1"><path d="M49 324h10v62h48M211 330h-12v66h-48M49 384h12v17h50M211 299h-11v37h-12"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="480" viewBox="0 0 260 480">
+  <title>ESP32 DevKit V1 30-pin</title>
+  <defs>
+    <!-- 3D Brushed Aluminium RF Shield Gradient -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.45">
+      <stop offset="0" stop-color="#8b949e"/>
+      <stop offset="0.18" stop-color="#e5e7eb"/>
+      <stop offset="0.42" stop-color="#9ca3af"/>
+      <stop offset="0.68" stop-color="#f3f4f6"/>
+      <stop offset="0.88" stop-color="#9ca3af"/>
+      <stop offset="1" stop-color="#6b7280"/>
+    </linearGradient>
+    <!-- Matte Black PCB with 3D Depth -->
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#262c34"/>
+      <stop offset="0.5" stop-color="#171b21"/>
+      <stop offset="1" stop-color="#0b0e12"/>
+    </linearGradient>
+    <linearGradient id="pcbBevel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#525b66"/>
+      <stop offset="1" stop-color="#090c10"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef08a"/>
+      <stop offset="0.5" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#854d0e"/>
+    </linearGradient>
+    <linearGradient id="chipDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b3137"/>
+      <stop offset="1" stop-color="#111418"/>
+    </linearGradient>
+    <filter id="elevate3d" x="-15%" y="-10%" width="140%" height="135%">
+      <feDropShadow dx="2" dy="5" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.72"/>
+    </filter>
+    <filter id="smShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 1h4" stroke="#fff" stroke-opacity=".035" stroke-width=".5"/>
+    </pattern>
+  </defs>
+
+  <!-- 3D PCB Base Thickness Extrusion -->
+  <rect x="9" y="10" width="248" height="470" rx="12" fill="#050709"/>
+  <rect x="6" y="4" width="248" height="470" rx="11" fill="url(#pcb)" stroke="url(#pcbBevel)" stroke-width="2.5"/>
+  <rect x="7" y="5" width="246" height="468" rx="10" fill="url(#grain)"/>
+
+  <!-- 3D Side Header Plastic Strips (Left & Right 15-Pin Rails) -->
+  <rect x="8" y="88" width="22" height="346" rx="2" fill="#0d1117" stroke="#2d333b" stroke-width="1" filter="url(#smShadow)"/>
+  <rect x="230" y="88" width="22" height="346" rx="2" fill="#0d1117" stroke="#2d333b" stroke-width="1" filter="url(#smShadow)"/>
+
+  <!-- Gold Plated Mounting Holes -->
+  <g>
+    <circle cx="24" cy="23" r="9.5" fill="url(#gold)"/>
+    <circle cx="24" cy="23" r="5.2" fill="#0a0d12" stroke="#000" stroke-width="1.2"/>
+    <circle cx="236" cy="23" r="9.5" fill="url(#gold)"/>
+    <circle cx="236" cy="23" r="5.2" fill="#0a0d12" stroke="#000" stroke-width="1.2"/>
+    <circle cx="24" cy="456" r="9.5" fill="url(#gold)"/>
+    <circle cx="24" cy="456" r="5.2" fill="#0a0d12" stroke="#000" stroke-width="1.2"/>
+    <circle cx="236" cy="456" r="9.5" fill="url(#gold)"/>
+    <circle cx="236" cy="456" r="5.2" fill="#0a0d12" stroke="#000" stroke-width="1.2"/>
+  </g>
+
+  <!-- Top PCB Meander Wi-Fi/BT Antenna Module -->
+  <g filter="url(#smShadow)">
+    <rect x="64" y="16" width="132" height="86" rx="3" fill="#121619" stroke="#2f3740" stroke-width="1.2"/>
+    <path d="M77 92V28h16v48h15V28h16v48h15V28h16v48h26V28" fill="none" stroke="url(#gold)" stroke-width="3.4" stroke-linecap="square"/>
+    <circle cx="84" cy="92" r="2" fill="url(#gold)"/>
+    <circle cx="152" cy="92" r="2" fill="url(#gold)"/>
+  </g>
+
+  <!-- Castellated Gold Module Solder Pads -->
+  <g fill="url(#gold)">
+    <rect x="62" y="112" width="12" height="6.5" rx="1"/><rect x="186" y="112" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="125" width="12" height="6.5" rx="1"/><rect x="186" y="125" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="138" width="12" height="6.5" rx="1"/><rect x="186" y="138" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="151" width="12" height="6.5" rx="1"/><rect x="186" y="151" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="164" width="12" height="6.5" rx="1"/><rect x="186" y="164" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="177" width="12" height="6.5" rx="1"/><rect x="186" y="177" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="190" width="12" height="6.5" rx="1"/><rect x="186" y="190" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="203" width="12" height="6.5" rx="1"/><rect x="186" y="203" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="216" width="12" height="6.5" rx="1"/><rect x="186" y="216" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="229" width="12" height="6.5" rx="1"/><rect x="186" y="229" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="242" width="12" height="6.5" rx="1"/><rect x="186" y="242" width="12" height="6.5" rx="1"/>
+    <rect x="62" y="255" width="12" height="6.5" rx="1"/><rect x="186" y="255" width="12" height="6.5" rx="1"/>
+  </g>
+
+  <!-- 3D Elevated ESP-WROOM-32 Metallic RF Shield Can -->
+  <g filter="url(#elevate3d)">
+    <rect x="70" y="102" width="120" height="172" rx="4" fill="#22272e" stroke="#8b949e" stroke-width="1"/>
+    <!-- Raised Bevel Can Top -->
+    <rect x="74" y="106" width="112" height="162" rx="3" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="78" y="110" width="104" height="154" rx="2" fill="none" stroke="#64748b" stroke-width="0.6"/>
+    <circle cx="86" cy="254" r="3" fill="#334155"/>
+    <!-- Engraved Laser Markings -->
+    <path d="M118 128a18 18 0 0 1 25 0m-21 4a12 12 0 0 1 17 0m-13 4a5 5 0 0 1 9 0" fill="none" stroke="#374151" stroke-width="1.6"/>
+    <text x="130" y="152" font-family="Arial,sans-serif" font-size="10.5" font-weight="bold" fill="#334155" letter-spacing="1" text-anchor="middle">ESPRESSIF</text>
+    <text x="130" y="176" font-family="Arial,sans-serif" font-size="11.5" font-weight="900" fill="#1e293b" text-anchor="middle">ESP-WROOM-32</text>
+    <text x="130" y="198" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#475569" text-anchor="middle">Wi-Fi + BT + BLE MCU</text>
+    <text x="130" y="226" font-family="Arial,sans-serif" font-size="17" font-weight="bold" fill="#475569" text-anchor="middle">CE   FCC</text>
+    <text x="130" y="248" font-family="monospace" font-size="6.5" font-weight="bold" fill="#475569" text-anchor="middle">2.4 GHz · 802.11 b/g/n</text>
+  </g>
+
+  <!-- Board Silkscreen Title -->
+  <text x="130" y="294" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#f1f5f9" letter-spacing="0.5" text-anchor="middle">ESP32 DEVKIT V1</text>
+  <text x="130" y="308" font-family="monospace" font-size="7.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">DOIT · 30-PIN Wi-Fi BOARD</text>
+
+  <!-- Copper PCB Traces -->
+  <g fill="none" stroke="#334155" stroke-width="1.2">
+    <path d="M52 324h14v62h44M208 330h-14v66h-44M52 384h14v17h48M208 299h-12v37h-12"/>
+  </g>
+
+  <!-- SMD Capacitors & Resistors (3D Detailed) -->
+  <g filter="url(#smShadow)">
+    <rect x="75" y="324" width="6" height="12" rx="1" fill="#d1d5db"/><rect x="75" y="327" width="6" height="6" fill="#92400e"/>
+    <rect x="75" y="341" width="6" height="12" rx="1" fill="#d1d5db"/><rect x="75" y="344" width="6" height="6" fill="#92400e"/>
+    <rect x="75" y="372" width="6" height="12" rx="1" fill="#d1d5db"/><rect x="75" y="375" width="6" height="6" fill="#1e293b"/>
+    <rect x="98" y="324" width="6" height="12" rx="1" fill="#d1d5db"/><rect x="98" y="327" width="6" height="6" fill="#92400e"/>
+    <rect x="98" y="341" width="6" height="12" rx="1" fill="#d1d5db"/><rect x="98" y="344" width="6" height="6" fill="#1e293b"/>
+  </g>
+
+  <!-- CP2102 USB-to-UART Bridge QFN Chip (3D Elevated) -->
+  <g filter="url(#elevate3d)">
+    <rect x="111" y="331" width="38" height="38" rx="2.5" fill="url(#chipDark)" stroke="#475569" stroke-width="1"/>
+    <circle cx="117" cy="337" r="1.8" fill="#94a3b8"/>
+    <g fill="#cbd5e1">
+      <rect x="116" y="328" width="2" height="3"/><rect x="122" y="328" width="2" height="3"/><rect x="128" y="328" width="2" height="3"/><rect x="134" y="328" width="2" height="3"/><rect x="140" y="328" width="2" height="3"/>
+      <rect x="116" y="369" width="2" height="3"/><rect x="122" y="369" width="2" height="3"/><rect x="128" y="369" width="2" height="3"/><rect x="134" y="369" width="2" height="3"/><rect x="140" y="369" width="2" height="3"/>
+      <rect x="108" y="336" width="3" height="2"/><rect x="108" y="342" width="3" height="2"/><rect x="108" y="348" width="3" height="2"/><rect x="108" y="354" width="3" height="2"/><rect x="108" y="360" width="3" height="2"/>
+      <rect x="149" y="336" width="3" height="2"/><rect x="149" y="342" width="3" height="2"/><rect x="149" y="348" width="3" height="2"/><rect x="149" y="354" width="3" height="2"/><rect x="149" y="360" width="3" height="2"/>
+    </g>
+    <text x="130" y="350" font-family="monospace" font-size="6.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">SILABS</text>
+    <text x="130" y="359" font-family="monospace" font-size="6.5" font-weight="bold" fill="#cbd5e1" text-anchor="middle">CP2102</text>
+  </g>
+
+  <!-- AMS1117 3.3V LDO Voltage Regulator (3D SOT-223) -->
+  <g filter="url(#elevate3d)">
+    <rect x="166" y="326" width="20" height="8" rx="1" fill="url(#metal)"/>
+    <rect x="162" y="333" width="28" height="22" rx="2" fill="url(#chipDark)" stroke="#475569" stroke-width="1"/>
+    <rect x="165" y="355" width="4" height="6" fill="url(#metal)"/>
+    <rect x="174" y="355" width="4" height="6" fill="url(#metal)"/>
+    <rect x="183" y="355" width="4" height="6" fill="url(#metal)"/>
+    <text x="176" y="344" font-family="monospace" font-size="5.5" font-weight="bold" fill="#cbd5e1" text-anchor="middle">AMS1117</text>
+    <text x="176" y="351" font-family="monospace" font-size="5.5" fill="#94a3b8" text-anchor="middle">3.3V</text>
+  </g>
+
+  <!-- Onboard Indicator LEDs (PWR Red & D2 Blue) -->
+  <g>
+    <rect x="92" y="400" width="9" height="5" rx="1" fill="#ef4444" stroke="#fca5a5" stroke-width="0.8"/>
+    <text x="96.5" y="396" font-family="monospace" font-size="5.5" font-weight="bold" fill="#fca5a5" text-anchor="middle">PWR</text>
+    <rect x="159" y="400" width="9" height="5" rx="1" fill="#3b82f6" stroke="#93c5fd" stroke-width="0.8"/>
+    <text x="163.5" y="396" font-family="monospace" font-size="5.5" font-weight="bold" fill="#93c5fd" text-anchor="middle">D2</text>
+  </g>
+
+  <!-- 3D Tactile Push Buttons (EN & BOOT) -->
+  <g filter="url(#elevate3d)">
+    <rect x="64" y="408" width="26" height="32" rx="3" fill="url(#metal)" stroke="#f1f5f9" stroke-width="1"/>
+    <circle cx="77" cy="424" r="8.5" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="76" cy="423" r="6" fill="#1e293b"/>
+    <text x="77" y="452" font-family="monospace" font-size="7.5" font-weight="bold" fill="#e2e8f0" text-anchor="middle">EN</text>
+
+    <rect x="170" y="408" width="26" height="32" rx="3" fill="url(#metal)" stroke="#f1f5f9" stroke-width="1"/>
+    <circle cx="183" cy="424" r="8.5" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="182" cy="423" r="6" fill="#1e293b"/>
+    <text x="183" y="452" font-family="monospace" font-size="7.5" font-weight="bold" fill="#e2e8f0" text-anchor="middle">BOOT</text>
+  </g>
+
+  <!-- Bottom Micro-USB Connector (3D Metallic Overhang) -->
+  <g filter="url(#elevate3d)">
+    <rect x="102" y="440" width="56" height="38" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="108" y="458" width="44" height="15" rx="2" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <rect x="115" y="464" width="30" height="3.5" rx="1" fill="url(#gold)"/>
+    <path d="M112 446 H148 M116 451 H144" stroke="#64748b" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+</svg>

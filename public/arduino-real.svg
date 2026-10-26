@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="440" viewBox="0 0 280 440">
+  <title>Arduino Uno R3</title>
+  <defs>
+    <!-- PCB Teal Gradient with 3D Bevel Lighting -->
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#008184"/>
+      <stop offset="0.45" stop-color="#00686b"/>
+      <stop offset="1" stop-color="#004447"/>
+    </linearGradient>
+    <linearGradient id="pcbEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2bb5b8"/>
+      <stop offset="1" stop-color="#002b2d"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0" stop-color="#9ca3af"/>
+      <stop offset="0.25" stop-color="#f3f4f6"/>
+      <stop offset="0.5" stop-color="#9ca3af"/>
+      <stop offset="0.78" stop-color="#e5e7eb"/>
+      <stop offset="1" stop-color="#4b5563"/>
+    </linearGradient>
+    <linearGradient id="darkPlastic" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d333b"/>
+      <stop offset="1" stop-color="#11151c"/>
+    </linearGradient>
+    <linearGradient id="chipBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#282c34"/>
+      <stop offset="0.5" stop-color="#1b1e24"/>
+      <stop offset="1" stop-color="#0f1115"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fde047"/>
+      <stop offset="0.5" stop-color="#ca8a04"/>
+      <stop offset="1" stop-color="#854d0e"/>
+    </linearGradient>
+    <filter id="drop3d" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="chipShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="5" stdDeviation="2.5" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    <pattern id="traces" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 8h8l4-4h4M8 16v-6l4-4" fill="none" stroke="#00979c" stroke-width="0.9" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- 3D PCB Base Shadow & Thickness Extrusion -->
+  <path d="M18 32 H262 A12 12 0 0 1 274 44 V416 A12 12 0 0 1 262 428 H18 A12 12 0 0 1 6 416 V44 A12 12 0 0 1 18 32 Z" fill="#002224" transform="translate(3, 6)"/>
+  <path d="M18 32 H262 A12 12 0 0 1 274 44 V416 A12 12 0 0 1 262 428 H18 A12 12 0 0 1 6 416 V44 A12 12 0 0 1 18 32 Z" fill="url(#pcb)" stroke="url(#pcbEdge)" stroke-width="2.5"/>
+  <path d="M18 32 H262 A12 12 0 0 1 274 44 V416 A12 12 0 0 1 262 428 H18 A12 12 0 0 1 6 416 V44 A12 12 0 0 1 18 32 Z" fill="url(#traces)"/>
+
+  <!-- Copper Decorative Traces -->
+  <g fill="none" stroke="#00a8ad" stroke-width="1.4" opacity="0.55">
+    <path d="M40 160 H105 L120 175 V330"/>
+    <path d="M40 182 H98 L112 196 V330"/>
+    <path d="M40 204 H92 L105 217 V330"/>
+    <path d="M40 292 H88 L105 309 H155"/>
+    <path d="M40 314 H82 L98 330 H155"/>
+    <path d="M240 120 H195 L180 135 V260"/>
+    <path d="M240 142 H200 L185 157 V260"/>
+    <path d="M240 164 H205 L190 179 V260"/>
+    <path d="M240 252 H205 L188 269 H165"/>
+    <path d="M240 274 H200 L182 291 H165"/>
+  </g>
+
+  <!-- Mounting Holes with Gold Rings & 3D Depth -->
+  <g>
+    <circle cx="28" cy="56" r="10" fill="url(#gold)"/>
+    <circle cx="28" cy="56" r="6" fill="#09131c" stroke="#002b2d" stroke-width="1.5"/>
+    <circle cx="252" cy="56" r="10" fill="url(#gold)"/>
+    <circle cx="252" cy="56" r="6" fill="#09131c" stroke="#002b2d" stroke-width="1.5"/>
+    <circle cx="28" cy="404" r="10" fill="url(#gold)"/>
+    <circle cx="28" cy="404" r="6" fill="#09131c" stroke="#002b2d" stroke-width="1.5"/>
+    <circle cx="252" cy="404" r="10" fill="url(#gold)"/>
+    <circle cx="252" cy="404" r="6" fill="#09131c" stroke="#002b2d" stroke-width="1.5"/>
+  </g>
+
+  <!-- Top Left: DC Barrel Jack (3D Extruded) -->
+  <g filter="url(#drop3d)">
+    <rect x="44" y="14" width="54" height="68" rx="4" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    <rect x="48" y="10" width="46" height="12" rx="2" fill="#09090b"/>
+    <rect x="52" y="24" width="38" height="48" rx="3" fill="url(#darkPlastic)"/>
+    <circle cx="71" cy="42" r="9" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+    <circle cx="71" cy="42" r="3.5" fill="url(#metal)"/>
+    <text x="71" y="77" font-family="monospace" font-size="6.5" font-weight="bold" fill="#a1a1aa" text-anchor="middle">DC 7-12V</text>
+  </g>
+
+  <!-- Top Right: USB Type-B Port (3D Brushed Aluminium) -->
+  <g filter="url(#drop3d)">
+    <rect x="156" y="8" width="62" height="72" rx="4" fill="#4b5563"/>
+    <rect x="158" y="10" width="58" height="68" rx="3" fill="url(#metal)" stroke="#f3f4f6" stroke-width="1"/>
+    <rect x="166" y="6" width="42" height="8" rx="1.5" fill="#1f2937" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="167" y="20" width="40" height="44" rx="2" fill="none" stroke="#6b7280" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="187" y="45" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="#374151" text-anchor="middle">USB-B</text>
+  </g>
+
+  <!-- Top Far Right: Reset Tactile Button -->
+  <g filter="url(#drop3d)">
+    <rect x="226" y="66" width="24" height="24" rx="3" fill="url(#metal)" stroke="#d1d5db" stroke-width="1"/>
+    <circle cx="230" cy="70" r="1.8" fill="#1f2937"/>
+    <circle cx="246" cy="70" r="1.8" fill="#1f2937"/>
+    <circle cx="230" cy="86" r="1.8" fill="#1f2937"/>
+    <circle cx="246" cy="86" r="1.8" fill="#1f2937"/>
+    <circle cx="238" cy="78" r="7.5" fill="#b91c1c"/>
+    <circle cx="237" cy="77" r="6" fill="#ef4444"/>
+    <text x="238" y="100" font-family="monospace" font-size="6.5" font-weight="bold" fill="#e2e8f0" text-anchor="middle">RESET</text>
+  </g>
+
+  <!-- Left Female Header Block (3D Plastic Housing) -->
+  <g filter="url(#drop3d)">
+    <!-- Power Header (5 pins) -->
+    <rect x="9" y="148" width="22" height="114" rx="2" fill="url(#darkPlastic)" stroke="#475569" stroke-width="1"/>
+    <!-- Analog Header (6 pins) -->
+    <rect x="9" y="278" width="22" height="136" rx="2" fill="url(#darkPlastic)" stroke="#475569" stroke-width="1"/>
+  </g>
+
+  <!-- Right Female Header Block (3D Plastic Housing) -->
+  <g filter="url(#drop3d)">
+    <!-- Digital High (8-13) -->
+    <rect x="249" y="104" width="22" height="134" rx="2" fill="url(#darkPlastic)" stroke="#475569" stroke-width="1"/>
+    <!-- Digital Low (0-7) -->
+    <rect x="249" y="242" width="22" height="172" rx="2" fill="url(#darkPlastic)" stroke="#475569" stroke-width="1"/>
+  </g>
+
+  <!-- Voltage Regulator & Electrolytic Capacitors (3D Cylinders) -->
+  <g filter="url(#drop3d)">
+    <!-- Voltage Regulator AMS1117 -->
+    <rect x="108" y="42" width="28" height="20" rx="2" fill="url(#chipBody)" stroke="#52525b" stroke-width="1"/>
+    <rect x="114" y="36" width="16" height="7" rx="1" fill="url(#metal)"/>
+    <rect x="111" y="62" width="4" height="6" fill="url(#metal)"/>
+    <rect x="120" y="62" width="4" height="6" fill="url(#metal)"/>
+    <rect x="129" y="62" width="4" height="6" fill="url(#metal)"/>
+    <!-- Dual Electrolytic Capacitors -->
+    <circle cx="72" cy="108" r="14" fill="#374151" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="72" cy="108" r="11.5" fill="url(#metal)"/>
+    <path d="M62 108 H82 M72 98 V118" stroke="#6b7280" stroke-width="1"/>
+    <circle cx="72" cy="140" r="14" fill="#374151" stroke="#1f2937" stroke-width="2"/>
+    <circle cx="72" cy="140" r="11.5" fill="url(#metal)"/>
+    <path d="M62 140 H82 M72 130 V150" stroke="#6b7280" stroke-width="1"/>
+  </g>
+
+  <!-- 16MHz Crystal Oscillator (Metallic Pill) -->
+  <g filter="url(#drop3d)">
+    <rect x="112" y="106" width="20" height="44" rx="10" fill="url(#metal)" stroke="#e5e7eb" stroke-width="1.2"/>
+    <rect x="115" y="110" width="14" height="36" rx="7" fill="none" stroke="#6b7280" stroke-width="0.7"/>
+    <text x="122" y="131" font-family="monospace" font-size="6" font-weight="bold" fill="#374151" text-anchor="middle" transform="rotate(90 122 128)">16.000MHz</text>
+  </g>
+
+  <!-- ATmega16U2 USB Interface QFP Chip -->
+  <g filter="url(#drop3d)">
+    <rect x="158" y="98" width="28" height="28" rx="2" fill="url(#chipBody)" stroke="#52525b" stroke-width="1"/>
+    <circle cx="163" cy="103" r="1.5" fill="#9ca3af"/>
+    <g fill="url(#metal)">
+      <rect x="161" y="94" width="2" height="4"/><rect x="166" y="94" width="2" height="4"/><rect x="171" y="94" width="2" height="4"/><rect x="176" y="94" width="2" height="4"/><rect x="181" y="94" width="2" height="4"/>
+      <rect x="161" y="126" width="2" height="4"/><rect x="166" y="126" width="2" height="4"/><rect x="171" y="126" width="2" height="4"/><rect x="176" y="126" width="2" height="4"/><rect x="181" y="126" width="2" height="4"/>
+      <rect x="154" y="101" width="4" height="2"/><rect x="154" y="106" width="4" height="2"/><rect x="154" y="111" width="4" height="2"/><rect x="154" y="116" width="4" height="2"/><rect x="154" y="121" width="4" height="2"/>
+      <rect x="186" y="101" width="4" height="2"/><rect x="186" y="106" width="4" height="2"/><rect x="186" y="111" width="4" height="2"/><rect x="186" y="116" width="4" height="2"/><rect x="186" y="121" width="4" height="2"/>
+    </g>
+  </g>
+
+  <!-- Arduino UNO Branding & Infinity Silkscreen -->
+  <g>
+    <circle cx="176" cy="175" r="13" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <circle cx="176" cy="202" r="13" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <text x="176" y="179" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">−</text>
+    <text x="176" y="207" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">+</text>
+    <text x="152" y="190" font-family="Arial,sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="1.5" text-anchor="middle" transform="rotate(90 152 190)">ARDUINO</text>
+    <rect x="163" y="226" width="26" height="48" rx="6" fill="#ffffff"/>
+    <text x="176" y="250" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="#00686b" text-anchor="middle" transform="rotate(90 176 250)">UNO</text>
+    <text x="176" y="288" font-family="monospace" font-size="7" font-weight="bold" fill="#cffafe" text-anchor="middle">REV3 · SMD/DIP</text>
+  </g>
+
+  <!-- Main ATmega328P-PU 28-Pin DIP IC Socket & Chip (3D Highlight) -->
+  <g filter="url(#chipShadow)">
+    <!-- Socket Base -->
+    <rect x="92" y="182" width="52" height="196" rx="3" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    <!-- 28 Metallic IC Legs (14 each side) -->
+    <g fill="url(#metal)">
+      <rect x="86" y="190" width="6" height="6" rx="1"/><rect x="144" y="190" width="6" height="6" rx="1"/>
+      <rect x="86" y="203" width="6" height="6" rx="1"/><rect x="144" y="203" width="6" height="6" rx="1"/>
+      <rect x="86" y="216" width="6" height="6" rx="1"/><rect x="144" y="216" width="6" height="6" rx="1"/>
+      <rect x="86" y="229" width="6" height="6" rx="1"/><rect x="144" y="229" width="6" height="6" rx="1"/>
+      <rect x="86" y="242" width="6" height="6" rx="1"/><rect x="144" y="242" width="6" height="6" rx="1"/>
+      <rect x="86" y="255" width="6" height="6" rx="1"/><rect x="144" y="255" width="6" height="6" rx="1"/>
+      <rect x="86" y="268" width="6" height="6" rx="1"/><rect x="144" y="268" width="6" height="6" rx="1"/>
+      <rect x="86" y="281" width="6" height="6" rx="1"/><rect x="144" y="281" width="6" height="6" rx="1"/>
+      <rect x="86" y="294" width="6" height="6" rx="1"/><rect x="144" y="294" width="6" height="6" rx="1"/>
+      <rect x="86" y="307" width="6" height="6" rx="1"/><rect x="144" y="307" width="6" height="6" rx="1"/>
+      <rect x="86" y="320" width="6" height="6" rx="1"/><rect x="144" y="320" width="6" height="6" rx="1"/>
+      <rect x="86" y="333" width="6" height="6" rx="1"/><rect x="144" y="333" width="6" height="6" rx="1"/>
+      <rect x="86" y="346" width="6" height="6" rx="1"/><rect x="144" y="346" width="6" height="6" rx="1"/>
+      <rect x="86" y="359" width="6" height="6" rx="1"/><rect x="144" y="359" width="6" height="6" rx="1"/>
+    </g>
+    <!-- Raised DIP Body -->
+    <rect x="96" y="186" width="44" height="188" rx="2" fill="url(#chipBody)" stroke="#52525b" stroke-width="1"/>
+    <path d="M112 186 A6 6 0 0 0 124 186" fill="#111318" stroke="#52525b" stroke-width="1"/>
+    <circle cx="104" cy="196" r="2.5" fill="#3f3f46"/>
+    <text x="118" y="280" font-family="monospace" font-size="9" font-weight="bold" fill="#9ca3af" text-anchor="middle" transform="rotate(90 118 280)">ATMEGA328P-PU</text>
+    <text x="107" y="280" font-family="monospace" font-size="6.5" fill="#6b7280" text-anchor="middle" transform="rotate(90 107 280)">MICROCHIP · AVR</text>
+  </g>
+
+  <!-- Status LEDs (ON, L, TX, RX) with Glow -->
+  <g>
+    <!-- ON LED -->
+    <rect x="206" y="132" width="10" height="6" rx="1" fill="#22c55e" stroke="#bbf7d0" stroke-width="1"/>
+    <text x="202" y="137" font-family="monospace" font-size="6.5" font-weight="bold" fill="#e2e8f0" text-anchor="end">ON</text>
+    <!-- L (Pin 13) LED -->
+    <rect x="206" y="150" width="10" height="6" rx="1" fill="#eab308" stroke="#fef08a" stroke-width="1"/>
+    <text x="202" y="155" font-family="monospace" font-size="6.5" font-weight="bold" fill="#e2e8f0" text-anchor="end">L</text>
+    <!-- TX LED -->
+    <rect x="196" y="110" width="8" height="5" rx="1" fill="#f59e0b"/>
+    <text x="193" y="115" font-family="monospace" font-size="6" fill="#cbd5e1" text-anchor="end">TX</text>
+    <!-- RX LED -->
+    <rect x="196" y="120" width="8" height="5" rx="1" fill="#f59e0b"/>
+    <text x="193" y="125" font-family="monospace" font-size="6" fill="#cbd5e1" text-anchor="end">RX</text>
+  </g>
+
+  <!-- Bottom ICSP 6-Pin Header (3D Gold Pins) -->
+  <g filter="url(#drop3d)">
+    <rect x="148" y="388" width="38" height="26" rx="2" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+    <g fill="url(#gold)" stroke="#713f12" stroke-width="0.6">
+      <rect x="153" y="392" width="5" height="5" rx="1"/><rect x="164" y="392" width="5" height="5" rx="1"/><rect x="175" y="392" width="5" height="5" rx="1"/>
+      <rect x="153" y="403" width="5" height="5" rx="1"/><rect x="164" y="403" width="5" height="5" rx="1"/><rect x="175" y="403" width="5" height="5" rx="1"/>
+    </g>
+    <text x="167" y="384" font-family="monospace" font-size="6.5" font-weight="bold" fill="#cbd5e1" text-anchor="middle">ICSP</text>
+  </g>
+
+  <!-- Section Guides Silkscreen -->
+  <text x="72" y="198" font-family="monospace" font-size="7" font-weight="bold" fill="#a5f3fc" text-anchor="middle" transform="rotate(-90 72 198)">POWER</text>
+  <text x="72" y="348" font-family="monospace" font-size="7" font-weight="bold" fill="#86efac" text-anchor="middle" transform="rotate(-90 72 348)">ANALOG IN</text>
+  <text x="208" y="295" font-family="monospace" font-size="7" font-weight="bold" fill="#bae6fd" text-anchor="middle" transform="rotate(90 208 295)">DIGITAL (PWM ~)</text>
+</svg>

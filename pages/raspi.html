@@ -87,7 +87,7 @@
         .btn-delete-comp { position: absolute; top: -10px; right: -10px; background: #ef4444; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; cursor: pointer; opacity: 0; transition: opacity 0.2s; z-index: 40; border: 2px solid #2a2a40; }
         .component:hover .btn-delete-comp { opacity: 1; }
     </style>
-<link rel="stylesheet" href="/flat.css"><script src="/bridge.js"></script><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/resistor.css"><script src="/resistor.js"></script></head>
+<link rel="stylesheet" href="/flat.css"><script src="/bridge.js"></script><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/resistor.css"><script src="/resistor.js"></script><link rel="stylesheet" href="/sensors.css"><script src="/sensors.js"></script><script src="/python-syntax.js"></script><link rel="stylesheet" href="/board3d.css"><script defer src="/board3d.js"></script></head>
 <body>
 
     <!-- Modal Login Mahasiswa -->
@@ -320,7 +320,7 @@ while True:
         document.addEventListener('DOMContentLoaded', () => {
             const state = {
                 activeComponent: null, offsetX: 0, offsetY: 0, selectedPin: null,
-                wires: [], isSimulating: false,
+                wires: [], isSimulating: false, runVersion: 0,
                 hw: { pins: {}, analog: {}, digitalInput: {} }, 
                 isDraggingWire: false, activeWire: null, activeWireHandle: null,
                 isResizingEditor: false 
@@ -583,6 +583,12 @@ while True:
                 oled: (uid) => `<div class="btn-delete-comp"><i class="fas fa-times"></i></div><div class="component-header"><i class="fas fa-mobile-alt text-cyan-400"></i> SSD1306 OLED</div><div class="component-body" style="flex-direction: column; align-items: center;"><div class="oled-board"><div class="oled-screen" id="oled-vis-${uid}">SYSTEM INIT...<br>I2C ADDR 0x3C<br>WIFI CONNECTED</div></div><div class="flex justify-center gap-3 w-full mt-3"><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-gray-400">GND</span><div class="pin" data-pin-id="oled_gnd_${uid}" data-pin-name="gnd"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-red-400">VCC</span><div class="pin" data-pin-id="oled_vcc_${uid}" data-pin-name="vcc"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-yellow-300">SCL</span><div class="pin" data-pin-id="oled_scl_${uid}" data-pin-name="scl"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-blue-300">SDA</span><div class="pin" data-pin-id="oled_sda_${uid}" data-pin-name="sda"></div></div></div></div></div>`
             };
 
+            if (window.LabSensors) {
+                window.LabSensors.registerTemplates(componentTemplates);
+                window.LabSensors.injectSidebarPalette(document.getElementById('sidebar'));
+                window.LabSensors.installRuntimeAPIs(window, () => state, () => evaluateCircuit());
+            }
+
             window.spawnComponent = function(type, x, y, fixedUid = null, value = null, color = null) {
                 const uid = fixedUid || Date.now().toString() + Math.floor(Math.random() * 1000);
                 const el = document.createElement('div'); el.className = 'component';
@@ -593,7 +599,10 @@ while True:
                 if(value !== null) { el.setAttribute('data-value', value); const slider = el.querySelector('input[type="range"]'); if(slider) slider.value = value; }
                 if(color !== null && type === 'led') changeLEDColor(el, color, "Custom"); 
                 if (type === 'resistor') window.LabResistor.configure(el, value);
-                workspace.appendChild(el);
+                if (window.LabSensors && (type === 'dht22' || window.LabSensors.CATALOG[type])) {
+                    window.LabSensors.configure(el, value);
+                }
+                workspace.appendChild(el); return el;
             };
 
             document.querySelectorAll('.sidebar-item').forEach(item => {
@@ -729,10 +738,21 @@ while True:
             btnClear.addEventListener('click', () => { if(confirm("Hapus semua koneksi?")) { state.wires = []; renderWires(); evaluateCircuit(); }});
 
             // --- ENGINE SIMULATOR ---
-            window.sys_pinMode = function(pin, mode) {};
-            window.sys_digitalWrite = function(pin, val) { if (!state.isSimulating) return; state.hw.pins[pin.toString()] = val; evaluateCircuit(); };
+            let gpioNumbering = 'BCM';
+            const boardToBCM = {3:2,5:3,7:4,8:14,10:15,11:17,12:18,13:27,15:22,16:23,18:24,19:10,21:9,22:25,23:11,24:8,26:7,27:0,28:1,29:5,31:6,32:12,33:13,35:19,36:16,37:26,38:20,40:21};
+            const normalizeGPIO = pin => {
+                const mapped = gpioNumbering === 'BOARD' ? boardToBCM[pin] : Number(pin);
+                if (!Number.isInteger(mapped) || !Object.values(boardToBCM).includes(mapped)) throw Error('Nomor GPIO tidak didukung: ' + pin);
+                return mapped;
+            };
+            window.sys_setmode = function(mode) {
+                if (!['BCM', 'BOARD'].includes(mode)) throw Error('Gunakan GPIO.BCM atau GPIO.BOARD');
+                gpioNumbering = mode;
+            };
+            window.sys_pinMode = function(pin, mode) { normalizeGPIO(pin); };
+            window.sys_digitalWrite = function(pin, val) { if (!state.isSimulating) return; state.hw.pins[normalizeGPIO(pin).toString()] = Number(val); evaluateCircuit(); };
             window.sys_analogRead = function(pin) { return state.hw.analog[pin.toString()] || 0; }; 
-            window.sys_digitalRead = function(pin) { return state.hw.digitalInput[pin.toString()] || state.hw.pins[pin.toString()] || 0; };
+            window.sys_digitalRead = function(pin) { pin = normalizeGPIO(pin); return state.hw.digitalInput[pin.toString()] || state.hw.pins[pin.toString()] || 0; };
             
             window.sys_serial_print = function(val) {
                 if (val === undefined || val === null) val = "";
@@ -792,7 +812,19 @@ while True:
                 });
             };
             
-            window.sys_delay = function(ms) { return new Promise(resolve => { const interval = setInterval(() => { if(!state.isSimulating) { clearInterval(interval); resolve(); } }, 10); setTimeout(() => { clearInterval(interval); resolve(); }, ms); }); };
+            window.sys_delay = function(ms) {
+                const version = state.runVersion;
+                return new Promise((resolve, reject) => {
+                    let timer;
+                    const interval = setInterval(() => {
+                        if (!state.isSimulating || version !== state.runVersion) {
+                            clearInterval(interval); clearTimeout(timer);
+                            reject(new Error('Simulasi dihentikan.'));
+                        }
+                    }, 10);
+                    timer = setTimeout(() => { clearInterval(interval); resolve(); }, ms);
+                });
+            };
 
             // TRANSLATOR PYTHON
             function transpilePythonToJS(pyCode) {
@@ -810,31 +842,48 @@ while True:
                     if (currentIndent > indentStack[indentStack.length - 1]) { indentStack.push(currentIndent); }
                     
                     let jsLine = line.trim();
+                    jsLine = jsLine.replace(/\s+#.*$/, '');
+                    if (jsLine === 'pass') continue;
+                    jsLine = jsLine.replace(/ITENAS\.virtualWrite\(\s*['"]?(V\d+)['"]?\s*,\s*(.*?)\)/g, 'window.sys_blynk_virtualWrite("$1", $2)');
                     jsLine = jsLine.replace(/time\.sleep\((.*?)\)/g, 'await window.sys_delay($1 * 1000)');
+                    jsLine = jsLine.replace(/\bsleep\((.*?)\)/g, 'await window.sys_delay($1 * 1000)');
                     jsLine = jsLine.replace(/GPIO\.output\((.*?),\s*GPIO\.HIGH\)/g, 'window.sys_digitalWrite($1, 1)');
                     jsLine = jsLine.replace(/GPIO\.output\((.*?),\s*GPIO\.LOW\)/g, 'window.sys_digitalWrite($1, 0)');
                     jsLine = jsLine.replace(/GPIO\.output\((.*?),\s*(.*?)\)/g, 'window.sys_digitalWrite($1, $2)');
                     jsLine = jsLine.replace(/GPIO\.input\((.*?)\)/g, 'window.sys_digitalRead($1)');
                     jsLine = jsLine.replace(/print\((.*?)\)/g, 'window.sys_serial_println($1)');
-                    jsLine = jsLine.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false');
+                    jsLine = jsLine.replace(/\bTrue\b/g, 'true').replace(/\bFalse\b/g, 'false').replace(/\bNone\b/g, 'null');
                     jsLine = jsLine.replace(/\bGPIO\.HIGH\b/g, '1').replace(/\bGPIO\.LOW\b/g, '0');
                     jsLine = jsLine.replace(/^import\s+.*/g, '').replace(/^from\s+.*?import\s+.*/g, '');
-                    jsLine = jsLine.replace(/GPIO\.setmode\(.*\)/g, '').replace(/GPIO\.setwarnings\(.*\)/g, '');
-                    jsLine = jsLine.replace(/GPIO\.setup\((.*?),\s*GPIO\.OUT\)/g, 'window.sys_pinMode($1, 1)').replace(/GPIO\.setup\((.*?),\s*GPIO\.IN\)/g, 'window.sys_pinMode($1, 0)');
+                    jsLine = jsLine.replace(/GPIO\.setmode\(GPIO\.(BCM|BOARD)\)/g, 'window.sys_setmode("$1")').replace(/GPIO\.setwarnings\(.*\)/g, '').replace(/GPIO\.cleanup\(.*\)/g, '');
+                    jsLine = jsLine.replace(/GPIO\.setup\((.*?),\s*GPIO\.OUT(?:\s*,.*?)?\)/g, 'window.sys_pinMode($1, 1)').replace(/GPIO\.setup\((.*?),\s*GPIO\.IN(?:\s*,.*?)?\)/g, 'window.sys_pinMode($1, 0)');
+                    if (window.LabSensors?.transpilePythonSensors) {
+                        jsLine = window.LabSensors.transpilePythonSensors(jsLine);
+                    }
                     
                     if (jsLine.endsWith(':')) {
                         jsLine = jsLine.slice(0, -1);
-                        if (jsLine.startsWith('if ')) jsLine = `if (${jsLine.slice(3)}) {`;
-                        else if (jsLine.startsWith('elif ')) jsLine = `else if (${jsLine.slice(5)}) {`;
+                        const replaceLogicOps = s => s.replace(/"(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|\b(and|or|not)\b/g, (m, op) => op === 'and' ? '&&' : op === 'or' ? '||' : op === 'not' ? '!' : m);
+                        if (jsLine.startsWith('if ')) jsLine = `if (${replaceLogicOps(jsLine.slice(3))}) {`;
+                        else if (jsLine.startsWith('elif ')) jsLine = `else if (${replaceLogicOps(jsLine.slice(5))}) {`;
                         else if (jsLine.startsWith('while ')) {
-                            let cond = jsLine.slice(6).trim();
+                            let cond = replaceLogicOps(jsLine.slice(6).trim());
                             // INJEKSI DELAY ANTI-FREEZE & PERBAIKAN SCOPE
                             if (cond === 'True' || cond === 'true') jsLine = `while (window.iotEngine.getState().isSimulating) { await window.sys_delay(1);`;
                             else jsLine = `while (${cond}) { await window.sys_delay(1);`;
                         }
                         else if (jsLine === 'else') jsLine = `else {`;
-                        else if (jsLine.startsWith('def ')) { let m = jsLine.match(/^def\s+(.*?)\((.*?)\)$/); if (m) jsLine = `async function ${m[1]}(${m[2]}) {`; else jsLine += ' {'; }
-                        else if (jsLine.startsWith('for ')) { let m = jsLine.match(/^for\s+(.*?)\s+in\s+range\((.*?)\)$/); if (m) jsLine = `for(let ${m[1]}=0; ${m[1]}<${m[2]}; ${m[1]}++) {`; else jsLine += ' {'; }
+                        else if (jsLine.startsWith('def ')) { let m = jsLine.match(/^def\s+(.*?)\((.*?)\)$/); if (m) jsLine = /^ITENAS_WRITE_V\d+$/.test(m[1]) ? `window.${m[1]} = async function(${m[2]}) {` : `async function ${m[1]}(${m[2]}) {`; else jsLine += ' {'; }
+                        else if (jsLine.startsWith('for ')) {
+                            let m = jsLine.match(/^for\s+(.*?)\s+in\s+range\((.*?)\)$/);
+                            if (m) {
+                                const v = m[1].trim();
+                                const rArgs = m[2].split(',').map(x => x.trim());
+                                if (rArgs.length === 1) jsLine = `for(let ${v}=0; ${v}<${rArgs[0]}; ${v}++) {`;
+                                else if (rArgs.length === 2) jsLine = `for(let ${v}=${rArgs[0]}; ${v}<${rArgs[1]}; ${v}++) {`;
+                                else jsLine = `for(let ${v}=${rArgs[0]}; (${rArgs[2]})>=0 ? ${v}<${rArgs[1]} : ${v}>${rArgs[1]}; ${v}+=${rArgs[2]}) {`;
+                            } else jsLine += ' {';
+                        }
                         else jsLine += ' {';
                     } else if (!jsLine.endsWith('{') && !jsLine.endsWith('}')) {
                         if (!jsLine.endsWith(';')) jsLine += ';';
@@ -846,24 +895,34 @@ while True:
             }
 
             async function runSimulation() {
+                const version = state.runVersion;
                 try {
-                    state.hw.pins = {}; evaluateCircuit();
+                    state.hw.pins = {}; gpioNumbering = 'BCM'; evaluateCircuit();
                     if(window.sys_lcd_clear) window.sys_lcd_clear();
 
+                    window.PythonSyntax.check(codeEditor.value);
                     const jsCode = transpilePythonToJS(codeEditor.value);
                     const runner = new Function(` return async function() { ${jsCode} }; `)();
                     
                     logToConsole('Menjalankan skrip Python...', 'text-yellow-400');
                     await runner();
+                    if (version !== state.runVersion) return;
                     if (state.isSimulating) { logToConsole('Skrip Python selesai.', 'text-green-400'); stopSimulation(); }
                 } catch (error) {
+                    if (version !== state.runVersion || error.message === 'Simulasi dihentikan.') return;
                     console.error(error);
                     logToConsole(`Error Kompilasi: ${error.message}`, 'text-red-500');
+                    if (error.lineNumber) {
+                        const lines = codeEditor.value.split('\n');
+                        const start = lines.slice(0, error.lineNumber - 1).join('\n').length + (error.lineNumber > 1 ? 1 : 0);
+                        codeEditor.focus(); codeEditor.setSelectionRange(start, start + (lines[error.lineNumber - 1]?.length || 0));
+                    }
                     stopSimulation();
                 }
             }
 
             function stopSimulation() {
+                state.runVersion++;
                 state.isSimulating = false;
                 btnRun.innerHTML = '<i class="fas fa-play"></i> Mulai Simulasi';
                 btnRun.classList.replace('bg-yellow-600', 'bg-green-600'); btnRun.classList.replace('hover:bg-yellow-700', 'hover:bg-green-700');
@@ -984,6 +1043,7 @@ while True:
                         else { screen.classList.remove('on'); if (type === 'lcdi2c') { document.getElementById(`lcd-row-0-${uid}`).innerText = ''; document.getElementById(`lcd-row-1-${uid}`).innerText = ''; } }
                     });
                 });
+                window.LabSensors?.evaluate(state, document);
             }
 
             window.addEventListener('resize', renderWires);

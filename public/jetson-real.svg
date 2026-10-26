@@ -1,1 +1,192 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="410" viewBox="0 0 600 410"><title>Ilustrasi Jetson Nano Developer Kit 4 GB</title><defs><linearGradient id="pcb"><stop stop-color="#26714b"/><stop offset="1" stop-color="#123e2f"/></linearGradient><linearGradient id="metal"><stop stop-color="#77838c"/><stop offset=".5" stop-color="#dbe3e7"/><stop offset="1" stop-color="#85929c"/></linearGradient></defs><rect x="20" y="28" width="550" height="350" rx="18" fill="url(#pcb)" stroke="#69a57b" stroke-width="3"/><circle cx="40" cy="48" r="10" fill="#cab16a"/><circle cx="40" cy="48" r="5" fill="#142d24"/><circle cx="547" cy="48" r="10" fill="#cab16a"/><circle cx="547" cy="48" r="5" fill="#142d24"/><circle cx="40" cy="355" r="10" fill="#cab16a"/><circle cx="40" cy="355" r="5" fill="#142d24"/><circle cx="547" cy="355" r="10" fill="#cab16a"/><circle cx="547" cy="355" r="5" fill="#142d24"/><path d="M65 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M77 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M89 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M101 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M113 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M125 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M137 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M149 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M161 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><path d="M173 110v35l35 35v130" fill="none" stroke="#69a57b" opacity=".25"/><rect x="160" y="110" width="270" height="205" rx="5" fill="#428149" stroke="#a2b484"/><rect x="177" y="126" width="235" height="166" rx="4" fill="#161e24" stroke="#818e98"/><rect x="183" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="195" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="207" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="219" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="231" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="243" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="255" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="267" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="279" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="291" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="303" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="315" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="327" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="339" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="351" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="363" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="375" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="387" y="130" width="6" height="158" rx="2" fill="url(#metal)"/><rect x="166" y="180" width="258" height="42" fill="#182128"/><text x="295" y="207" text-anchor="middle" fill="#a3e635" font-family="sans-serif" font-size="21" font-weight="bold">JETSON NANO</text><rect x="80" y="54" width="370" height="37" rx="4" fill="#182023"/><rect x="89" y="64" width="7" height="7" fill="#d6b870"/><rect x="89" y="79" width="7" height="7" fill="#d6b870"/><rect x="107" y="64" width="7" height="7" fill="#d6b870"/><rect x="107" y="79" width="7" height="7" fill="#d6b870"/><rect x="125" y="64" width="7" height="7" fill="#d6b870"/><rect x="125" y="79" width="7" height="7" fill="#d6b870"/><rect x="143" y="64" width="7" height="7" fill="#d6b870"/><rect x="143" y="79" width="7" height="7" fill="#d6b870"/><rect x="161" y="64" width="7" height="7" fill="#d6b870"/><rect x="161" y="79" width="7" height="7" fill="#d6b870"/><rect x="179" y="64" width="7" height="7" fill="#d6b870"/><rect x="179" y="79" width="7" height="7" fill="#d6b870"/><rect x="197" y="64" width="7" height="7" fill="#d6b870"/><rect x="197" y="79" width="7" height="7" fill="#d6b870"/><rect x="215" y="64" width="7" height="7" fill="#d6b870"/><rect x="215" y="79" width="7" height="7" fill="#d6b870"/><rect x="233" y="64" width="7" height="7" fill="#d6b870"/><rect x="233" y="79" width="7" height="7" fill="#d6b870"/><rect x="251" y="64" width="7" height="7" fill="#d6b870"/><rect x="251" y="79" width="7" height="7" fill="#d6b870"/><rect x="269" y="64" width="7" height="7" fill="#d6b870"/><rect x="269" y="79" width="7" height="7" fill="#d6b870"/><rect x="287" y="64" width="7" height="7" fill="#d6b870"/><rect x="287" y="79" width="7" height="7" fill="#d6b870"/><rect x="305" y="64" width="7" height="7" fill="#d6b870"/><rect x="305" y="79" width="7" height="7" fill="#d6b870"/><rect x="323" y="64" width="7" height="7" fill="#d6b870"/><rect x="323" y="79" width="7" height="7" fill="#d6b870"/><rect x="341" y="64" width="7" height="7" fill="#d6b870"/><rect x="341" y="79" width="7" height="7" fill="#d6b870"/><rect x="359" y="64" width="7" height="7" fill="#d6b870"/><rect x="359" y="79" width="7" height="7" fill="#d6b870"/><rect x="377" y="64" width="7" height="7" fill="#d6b870"/><rect x="377" y="79" width="7" height="7" fill="#d6b870"/><rect x="395" y="64" width="7" height="7" fill="#d6b870"/><rect x="395" y="79" width="7" height="7" fill="#d6b870"/><rect x="413" y="64" width="7" height="7" fill="#d6b870"/><rect x="413" y="79" width="7" height="7" fill="#d6b870"/><rect x="431" y="64" width="7" height="7" fill="#d6b870"/><rect x="431" y="79" width="7" height="7" fill="#d6b870"/><rect x="477" y="115" width="101" height="68" rx="3" fill="url(#metal)" stroke="#4a5961"/><rect x="490" y="124" width="77" height="18" fill="#172632"/><rect x="490" y="154" width="77" height="18" fill="#172632"/><path d="M495 137h65M495 167h65" stroke="#3b82f6" stroke-width="5"/><rect x="477" y="195" width="101" height="68" rx="3" fill="url(#metal)" stroke="#4a5961"/><rect x="490" y="204" width="77" height="18" fill="#172632"/><rect x="490" y="234" width="77" height="18" fill="#172632"/><path d="M495 217h65M495 247h65" stroke="#3b82f6" stroke-width="5"/><rect x="477" y="278" width="102" height="70" rx="3" fill="url(#metal)"/><rect x="488" y="290" width="80" height="44" fill="#1a252b"/><rect x="68" y="318" width="55" height="34" fill="#141f23" stroke="#d9e3e8" stroke-width="4"/><rect x="164" y="337" width="79" height="40" rx="4" fill="url(#metal)"/><path d="M176 349h55l-6 17h-43z" fill="#19292c"/><rect x="287" y="334" width="72" height="16" fill="#e9e2c8"/><rect x="287" y="350" width="72" height="9" fill="#252f34"/><text x="270" y="108" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">40-PIN GPIO</text><text x="322" y="328" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">CSI CAMERA</text><text x="92" y="370" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">5V DC</text><text x="205" y="330" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">HDMI</text><text x="527" y="105" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">USB 3.0</text><text x="527" y="367" text-anchor="middle" fill="#eef6db" font-family="monospace" font-size="11">ETHERNET</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="410" viewBox="0 0 600 410">
+  <title>Ilustrasi Jetson Nano Developer Kit 4 GB</title>
+  <defs>
+    <!-- Dark Forest Carrier PCB with 3D Depth -->
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e4631"/>
+      <stop offset="0.5" stop-color="#143323"/>
+      <stop offset="1" stop-color="#0b1f15"/>
+    </linearGradient>
+    <linearGradient id="pcbEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4d8b66"/>
+      <stop offset="1" stop-color="#07140d"/>
+    </linearGradient>
+    <!-- Brushed Aluminium Ports -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.4">
+      <stop offset="0" stop-color="#7c8791"/>
+      <stop offset="0.22" stop-color="#e2e8f0"/>
+      <stop offset="0.5" stop-color="#94a3b8"/>
+      <stop offset="0.78" stop-color="#f1f5f9"/>
+      <stop offset="1" stop-color="#64748b"/>
+    </linearGradient>
+    <!-- Anodized Black Aluminium 3D Heatsink Fin Gradient -->
+    <linearGradient id="heatsinkFin" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f1419"/>
+      <stop offset="0.3" stop-color="#374151"/>
+      <stop offset="0.6" stop-color="#1f2937"/>
+      <stop offset="1" stop-color="#090d11"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef08a"/>
+      <stop offset="0.5" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#854d0e"/>
+    </linearGradient>
+    <filter id="elevate3d" x="-12%" y="-12%" width="135%" height="135%">
+      <feDropShadow dx="4" dy="7" stdDeviation="4.5" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+    <filter id="smShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 3D Carrier Board Thickness Extrusion -->
+  <rect x="25" y="36" width="550" height="350" rx="18" fill="#06120c"/>
+  <rect x="20" y="28" width="550" height="350" rx="18" fill="url(#pcb)" stroke="url(#pcbEdge)" stroke-width="3"/>
+
+  <!-- Gold Mounting Holes with 3D Depth -->
+  <g>
+    <circle cx="40" cy="48" r="11" fill="url(#gold)"/>
+    <circle cx="40" cy="48" r="5.5" fill="#0a1912" stroke="#000" stroke-width="1.5"/>
+    <circle cx="547" cy="48" r="11" fill="url(#gold)"/>
+    <circle cx="547" cy="48" r="5.5" fill="#0a1912" stroke="#000" stroke-width="1.5"/>
+    <circle cx="40" cy="355" r="11" fill="url(#gold)"/>
+    <circle cx="40" cy="355" r="5.5" fill="#0a1912" stroke="#000" stroke-width="1.5"/>
+    <circle cx="547" cy="355" r="11" fill="url(#gold)"/>
+    <circle cx="547" cy="355" r="5.5" fill="#0a1912" stroke="#000" stroke-width="1.5"/>
+  </g>
+
+  <!-- High-Speed Copper Differential Traces -->
+  <g fill="none" stroke="#4ade80" opacity=".22" stroke-width="1.1">
+    <path d="M65 95v45l35 35v130"/><path d="M77 95v45l35 35v130"/><path d="M89 95v45l35 35v130"/>
+    <path d="M101 95v45l35 35v130"/><path d="M113 95v45l35 35v130"/><path d="M125 95v45l35 35v130"/>
+    <path d="M137 95v45l35 35v130"/><path d="M149 95v45l35 35v130"/><path d="M161 95v45l35 35v130"/>
+    <path d="M173 95v45l35 35v130"/>
+  </g>
+
+  <!-- 40-Pin GPIO Header Plastic Base (Aligned with interactive pins at left:74px, top:53px) -->
+  <g filter="url(#smShadow)">
+    <rect x="80" y="54" width="370" height="37" rx="4" fill="#0f1418" stroke="#374151" stroke-width="1.5"/>
+    <rect x="83" y="57" width="364" height="31" rx="2.5" fill="#182026"/>
+    <!-- Gold Pin Pads (Visible in static preview & under interactive pins) -->
+    <g fill="url(#gold)">
+      <rect x="89" y="64" width="7" height="7" rx="1"/><rect x="89" y="79" width="7" height="7" rx="1"/>
+      <rect x="107" y="64" width="7" height="7" rx="1"/><rect x="107" y="79" width="7" height="7" rx="1"/>
+      <rect x="125" y="64" width="7" height="7" rx="1"/><rect x="125" y="79" width="7" height="7" rx="1"/>
+      <rect x="143" y="64" width="7" height="7" rx="1"/><rect x="143" y="79" width="7" height="7" rx="1"/>
+      <rect x="161" y="64" width="7" height="7" rx="1"/><rect x="161" y="79" width="7" height="7" rx="1"/>
+      <rect x="179" y="64" width="7" height="7" rx="1"/><rect x="179" y="79" width="7" height="7" rx="1"/>
+      <rect x="197" y="64" width="7" height="7" rx="1"/><rect x="197" y="79" width="7" height="7" rx="1"/>
+      <rect x="215" y="64" width="7" height="7" rx="1"/><rect x="215" y="79" width="7" height="7" rx="1"/>
+      <rect x="233" y="64" width="7" height="7" rx="1"/><rect x="233" y="79" width="7" height="7" rx="1"/>
+      <rect x="251" y="64" width="7" height="7" rx="1"/><rect x="251" y="79" width="7" height="7" rx="1"/>
+      <rect x="269" y="64" width="7" height="7" rx="1"/><rect x="269" y="79" width="7" height="7" rx="1"/>
+      <rect x="287" y="64" width="7" height="7" rx="1"/><rect x="287" y="79" width="7" height="7" rx="1"/>
+      <rect x="305" y="64" width="7" height="7" rx="1"/><rect x="305" y="79" width="7" height="7" rx="1"/>
+      <rect x="323" y="64" width="7" height="7" rx="1"/><rect x="323" y="79" width="7" height="7" rx="1"/>
+      <rect x="341" y="64" width="7" height="7" rx="1"/><rect x="341" y="79" width="7" height="7" rx="1"/>
+      <rect x="359" y="64" width="7" height="7" rx="1"/><rect x="359" y="79" width="7" height="7" rx="1"/>
+      <rect x="377" y="64" width="7" height="7" rx="1"/><rect x="377" y="79" width="7" height="7" rx="1"/>
+      <rect x="395" y="64" width="7" height="7" rx="1"/><rect x="395" y="79" width="7" height="7" rx="1"/>
+      <rect x="413" y="64" width="7" height="7" rx="1"/><rect x="413" y="79" width="7" height="7" rx="1"/>
+      <rect x="431" y="64" width="7" height="7" rx="1"/><rect x="431" y="79" width="7" height="7" rx="1"/>
+    </g>
+  </g>
+  <text x="72" y="65" fill="#bbf7d0" font-family="monospace" font-size="8" font-weight="bold">1</text>
+  <text x="456" y="65" fill="#bbf7d0" font-family="monospace" font-size="8" font-weight="bold">40</text>
+  <text x="265" y="106" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1.5">40-PIN GPIO EXPANSION HEADER (J41)</text>
+
+  <!-- Jetson Nano SOM Daughterboard & Massive 3D Extruded Black Anodized Heatsink -->
+  <g filter="url(#elevate3d)">
+    <!-- SOM Green Module Sub-PCB + SO-DIMM 260-Pin Connector -->
+    <rect x="156" y="114" width="278" height="202" rx="6" fill="#2d6a4f" stroke="#95d5b2" stroke-width="1.5"/>
+    <rect x="164" y="306" width="262" height="12" rx="2" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <!-- Massive 3D Anodized Heatsink Block -->
+    <rect x="172" y="122" width="246" height="178" rx="5" fill="#0b0f14" stroke="#475569" stroke-width="1.5"/>
+    <!-- 19 Extruded 3D Cooling Fins -->
+    <g fill="url(#heatsinkFin)">
+      <rect x="178" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="190" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="202" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="214" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="226" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="238" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="250" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="262" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="274" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="286" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="298" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="310" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="322" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="334" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="346" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="358" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="370" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="382" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="394" y="126" width="8" height="170" rx="1.5"/>
+      <rect x="404" y="126" width="8" height="170" rx="1.5"/>
+    </g>
+    <!-- 4 Heatsink Mounting Screw Bosses -->
+    <circle cx="182" cy="134" r="4" fill="url(#metal)" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="408" cy="134" r="4" fill="url(#metal)" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="182" cy="288" r="4" fill="url(#metal)" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="408" cy="288" r="4" fill="url(#metal)" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Center Brushed Nameplate Badge on Heatsink -->
+    <rect x="172" y="182" width="246" height="52" rx="3" fill="#111827" stroke="#374151" stroke-width="1.2"/>
+    <text x="295" y="205" text-anchor="middle" fill="#a3e635" font-family="Arial,sans-serif" font-size="19" font-weight="900" letter-spacing="1.5">NVIDIA JETSON NANO</text>
+    <text x="295" y="223" text-anchor="middle" fill="#94a3b8" font-family="monospace" font-size="9.5" font-weight="bold">128-CORE MAXWELL GPU · 4GB LPDDR4</text>
+  </g>
+
+  <!-- Left Side: Dual MIPI CSI-2 Camera Ribbon Connectors -->
+  <g filter="url(#smShadow)">
+    <rect x="42" y="138" width="22" height="112" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+    <rect x="52" y="143" width="8" height="102" rx="1" fill="#fef3c7"/>
+    <rect x="74" y="138" width="22" height="112" rx="3" fill="#0f172a" stroke="#475569" stroke-width="1.2"/>
+    <rect x="84" y="143" width="8" height="102" rx="1" fill="#fef3c7"/>
+    <text x="68" y="266" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="9" font-weight="bold">CSI CAM 0/1</text>
+  </g>
+
+  <!-- Right Side: Dual USB 3.0 Stacks & Gigabit Ethernet (3D Metallic Shielding) -->
+  <g filter="url(#elevate3d)">
+    <!-- USB 3.0 Stack 1 -->
+    <rect x="476" y="112" width="104" height="70" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="490" y="122" width="76" height="18" rx="1.5" fill="#0f172a"/>
+    <rect x="490" y="152" width="76" height="18" rx="1.5" fill="#0f172a"/>
+    <path d="M495 135h66M495 165h66" stroke="#2563eb" stroke-width="5"/>
+    <!-- USB 3.0 Stack 2 -->
+    <rect x="476" y="194" width="104" height="70" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="490" y="204" width="76" height="18" rx="1.5" fill="#0f172a"/>
+    <rect x="490" y="234" width="76" height="18" rx="1.5" fill="#0f172a"/>
+    <path d="M495 217h66M495 247h66" stroke="#2563eb" stroke-width="5"/>
+    <!-- Gigabit Ethernet RJ45 -->
+    <rect x="476" y="276" width="104" height="72" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="488" y="288" width="80" height="46" rx="2" fill="#0f172a"/>
+    <rect x="562" y="292" width="5" height="10" rx="1" fill="#22c55e"/>
+    <rect x="562" y="320" width="5" height="10" rx="1" fill="#eab308"/>
+  </g>
+
+  <!-- Bottom Edge: 5V DC Barrel Jack, HDMI + DisplayPort, Micro-USB -->
+  <g filter="url(#elevate3d)">
+    <!-- 5V DC Barrel Jack -->
+    <rect x="64" y="316" width="60" height="44" rx="4" fill="#18181b" stroke="#52525b" stroke-width="2"/>
+    <circle cx="94" cy="338" r="10" fill="#09090b" stroke="#3f3f46" stroke-width="2"/>
+    <circle cx="94" cy="338" r="3.5" fill="url(#metal)"/>
+    <!-- HDMI & DisplayPort Stacked Cage -->
+    <rect x="164" y="334" width="84" height="44" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <path d="M176 348h60l-6 18h-48z" fill="#0f172a"/>
+    <!-- Micro-USB Port -->
+    <rect x="284" y="340" width="46" height="36" rx="3" fill="url(#metal)" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="292" y="362" width="30" height="10" rx="1.5" fill="#0f172a"/>
+  </g>
+
+  <!-- Power LED Indicator -->
+  <circle cx="48" cy="322" r="4.5" fill="#22c55e" stroke="#bbf7d0" stroke-width="1.2"/>
+  <text x="48" y="312" text-anchor="middle" fill="#bbf7d0" font-family="monospace" font-size="7" font-weight="bold">PWR</text>
+
+  <!-- Labels -->
+  <text x="94" y="372" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10" font-weight="bold">5V DC</text>
+  <text x="206" y="328" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10" font-weight="bold">HDMI / DP</text>
+  <text x="307" y="333" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="9" font-weight="bold">MICRO-USB</text>
+  <text x="528" y="104" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10" font-weight="bold">4x USB 3.0</text>
+  <text x="528" y="366" text-anchor="middle" fill="#dcfce7" font-family="monospace" font-size="10" font-weight="bold">GIGABIT ETH</text>
+</svg>

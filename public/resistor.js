@@ -21,7 +21,7 @@
     function add(a,b){if(!a||!b)return;const x=a.getAttribute('data-pin-id'),y=b.getAttribute('data-pin-id');if(!x||!y)return;pins.set(x,a);pins.set(y,b);if(!links.has(x))links.set(x,new Set());if(!links.has(y))links.set(y,new Set());links.get(x).add(y);links.get(y).add(x);}
     for(const wire of wires)add(wire.pin1,wire.pin2);
     for(const r of resistors){const value=Number(r.getAttribute('data-value'));if(!Number.isFinite(value)||value<=0)continue;const endpoints=r.querySelectorAll('.resistor-terminal');add(endpoints[0],endpoints[1]);}
-    return {hasLevel(id,level){const seen=new Set(),queue=[id];for(let i=0;i<queue.length;i++){const current=queue[i];if(seen.has(current))continue;seen.add(current);const pin=pins.get(current);if(pin?.closest('.component[data-type="esp32"],.component[data-type="raspi"],.component[data-type="jetson"]')&&levels[pin.getAttribute('data-pin-name')]===level)return true;for(const next of links.get(current)||[])if(!seen.has(next))queue.push(next);}return false;}};
+    return {hasLevel(id,level){const seen=new Set(),queue=[id];for(let i=0;i<queue.length;i++){const current=queue[i];if(seen.has(current))continue;seen.add(current);const pin=pins.get(current);if(pin?.closest('.component[data-type="esp32"],.component[data-type="arduino"],.component[data-type="raspi"],.component[data-type="jetson"]')&&levels[pin.getAttribute('data-pin-name')]===level)return true;for(const next of links.get(current)||[])if(!seen.has(next))queue.push(next);}return false;}};
   }
   window.LabResistor={template,configure,network};
   if(typeof document!=='undefined')document.addEventListener('change',event=>{

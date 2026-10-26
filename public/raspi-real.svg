@@ -1,1 +1,193 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="330" viewBox="0 0 500 330"><title>Raspberry Pi 4 Model B</title><defs><linearGradient id="metal" x2="1" y2=".4"><stop stop-color="#7a8289"/><stop offset=".18" stop-color="#d4d8db"/><stop offset=".48" stop-color="#a7afb4"/><stop offset=".75" stop-color="#e0e3e4"/><stop offset="1" stop-color="#8b9398"/></linearGradient><linearGradient id="unused" x2="1" y2="1"><stop stop-color="#20282b"/><stop offset="1" stop-color="#0c1215"/></linearGradient><pattern id="grain" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0 1h3" stroke="#fff" stroke-opacity=".04" stroke-width=".4"/></pattern></defs><defs><linearGradient id="green" x2=".7" y2="1"><stop stop-color="#248d58"/><stop offset="1" stop-color="#116839"/></linearGradient></defs><rect x="5" y="5" width="477" height="308" rx="19" fill="url(#green)" stroke="#67a86c"/><rect x="6" y="6" width="475" height="306" rx="18" fill="url(#grain)"/><circle cx="24" cy="26" r="12" fill="#b4b45a"/><circle cx="24" cy="26" r="6" fill="#254b34"/><circle cx="362" cy="26" r="12" fill="#b4b45a"/><circle cx="362" cy="26" r="6" fill="#254b34"/><circle cx="24" cy="291" r="12" fill="#b4b45a"/><circle cx="24" cy="291" r="6" fill="#254b34"/><circle cx="362" cy="291" r="12" fill="#b4b45a"/><circle cx="362" cy="291" r="6" fill="#254b34"/><path d="M55 73v22l50 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M63 73v25l47 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M71 73v28l44 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M79 73v31l41 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M87 73v34l38 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M95 73v37l35 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M103 73v40l32 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M111 73v43l29 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M119 73v46l26 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M127 73v49l23 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M135 73v52l20 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><path d="M143 73v55l17 50v65" fill="none" stroke="#74aa60" stroke-opacity=".45" stroke-width=".7"/><rect x="41" y="17" width="308" height="34" rx="2" fill="#182022" stroke="#4c5e4a"/><text x="37" y="14" font-family="Arial,sans-serif" font-size="6" fill="#d7ebce" text-anchor="middle">1</text><text x="349" y="14" font-family="Arial,sans-serif" font-size="6" fill="#d7ebce" text-anchor="middle">40</text><rect x="37" y="70" width="65" height="70" rx="3" fill="#a0a9a4" stroke="#e0e4db"/><rect x="40" y="73" width="59" height="64" rx="2" fill="url(#metal)"/><text x="69" y="111" font-family="Arial,sans-serif" font-size="6" fill="#626e69" text-anchor="middle">WIRELESS</text><rect x="149" y="137" width="80" height="80" rx="4" fill="#3b4142" stroke="#b5bdb3"/><rect x="155" y="143" width="68" height="68" rx="3" fill="url(#metal)" stroke="#d0d7cd"/><text x="189" y="169" font-family="Arial,sans-serif" font-size="8" fill="#4b5450" text-anchor="middle">BROADCOM</text><text x="189" y="186" font-family="Arial,sans-serif" font-size="7" fill="#59615c" text-anchor="middle">BCM2711</text><text x="189" y="200" font-family="Arial,sans-serif" font-size="6" fill="#737e76" text-anchor="middle">64-bit ARM</text><rect x="251" y="140" width="51" height="75" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="255" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="255" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="261" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="261" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="267" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="267" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="273" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="273" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="279" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="279" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="285" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="285" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="291" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="291" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="297" y="137" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="297" y="214" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="248" y="144" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="144" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="150" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="150" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="156" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="156" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="162" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="162" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="168" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="168" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="174" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="174" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="180" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="180" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="186" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="186" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="192" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="192" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="198" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="198" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="204" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="204" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="248" y="210" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="301" y="210" width="4" height="2" rx="0" fill="#a1a9aa"/><text x="276" y="178" font-family="Arial,sans-serif" font-size="7" fill="#8d9a8e" text-anchor="middle">LPDDR4</text><text x="276" y="190" font-family="Arial,sans-serif" font-size="6" fill="#8d9a8e" text-anchor="middle">SDRAM</text><rect x="327" y="93" width="32" height="35" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="331" y="90" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="331" y="127" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="337" y="90" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="337" y="127" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="343" y="90" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="343" y="127" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="349" y="90" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="349" y="127" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="355" y="90" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="355" y="127" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="324" y="97" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="358" y="97" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="324" y="103" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="358" y="103" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="324" y="109" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="358" y="109" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="324" y="115" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="358" y="115" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="324" y="121" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="358" y="121" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="323" y="207" width="35" height="35" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="327" y="204" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="327" y="241" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="333" y="204" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="333" y="241" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="339" y="204" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="339" y="241" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="345" y="204" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="345" y="241" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="351" y="204" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="351" y="241" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="320" y="211" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="357" y="211" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="320" y="217" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="357" y="217" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="320" y="223" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="357" y="223" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="320" y="229" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="357" y="229" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="320" y="235" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="357" y="235" width="4" height="2" rx="0" fill="#a1a9aa"/><text x="237" y="77" font-family="Arial,sans-serif" font-size="15" fill="#d8ecce" text-anchor="middle">Raspberry Pi 4 Model B</text><text x="230" y="94" font-family="Arial,sans-serif" font-size="9" fill="#c8e1bd" text-anchor="middle">© Raspberry Pi 2019</text><text x="204" y="251" font-family="Arial,sans-serif" font-size="11" fill="#dcebd4" text-anchor="middle">raspberrypi.org</text><g fill="none" stroke="#d3e8c9" stroke-width="2"><ellipse cx="89" cy="181" rx="12" ry="16"/><ellipse cx="70" cy="181" rx="12" ry="16"/><ellipse cx="80" cy="202" rx="12" ry="13"/><path d="M80 164q-30-25-28-2 15 13 28 2 11-28 27-15-6 15-27 15"/></g><rect x="393" y="17" width="101" height="88" rx="3" fill="url(#metal)" stroke="#edf0e5"/><rect x="401" y="22" width="91" height="78" rx="2" fill="url(#grain)"/><rect x="469" y="28" width="25" height="66" rx="1" fill="#262b2d"/><rect x="474" y="35" width="15" height="52" rx="1" fill="#12191c"/><path d="M400 25h63M400 97h63" stroke="#717d7d" fill="none"/><text x="433" y="64.0" font-family="Arial,sans-serif" font-size="8" fill="#5c6564" text-anchor="middle">ETHERNET</text><rect x="393" y="124" width="101" height="75" rx="3" fill="url(#metal)" stroke="#edf0e5"/><rect x="401" y="129" width="91" height="65" rx="2" fill="url(#grain)"/><rect x="469" y="135" width="25" height="53" rx="1" fill="#262b2d"/><rect x="474" y="142" width="15" height="39" rx="1" fill="#235f9e"/><path d="M400 132h63M400 191h63" stroke="#717d7d" fill="none"/><text x="433" y="164.5" font-family="Arial,sans-serif" font-size="8" fill="#5c6564" text-anchor="middle">USB 3.0</text><rect x="393" y="219" width="101" height="75" rx="3" fill="url(#metal)" stroke="#edf0e5"/><rect x="401" y="224" width="91" height="65" rx="2" fill="url(#grain)"/><rect x="469" y="230" width="25" height="53" rx="1" fill="#262b2d"/><rect x="474" y="237" width="15" height="39" rx="1" fill="#12191c"/><path d="M400 227h63M400 286h63" stroke="#717d7d" fill="none"/><text x="433" y="259.5" font-family="Arial,sans-serif" font-size="8" fill="#5c6564" text-anchor="middle">USB 2.0</text><rect x="8" y="150" width="12" height="100" rx="1" fill="#141d1c"/><rect x="16" y="153" width="10" height="94" rx="1" fill="#dfdec3"/><rect x="23" y="156" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="159" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="162" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="165" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="168" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="171" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="174" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="177" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="180" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="183" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="186" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="189" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="192" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="195" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="198" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="201" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="204" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="207" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="210" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="213" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="216" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="219" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="222" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="225" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="228" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="231" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="234" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="237" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="240" width="5" height="1" rx="0" fill="#b9a267"/><rect x="23" y="243" width="5" height="1" rx="0" fill="#b9a267"/><rect x="317" y="257" width="15" height="51" rx="1" fill="#18241f"/><rect x="319" y="258" width="8" height="49" rx="1" fill="#e1dfc2"/><rect x="46" y="283" width="48" height="38" rx="3" fill="url(#metal)" stroke="#dce2dc"/><rect x="51" y="309" width="38" height="9" rx="2" fill="#27352f"/><text x="70.0" y="277" font-family="Arial,sans-serif" font-size="6" fill="#d8eacb" text-anchor="middle">USB-C</text><rect x="129" y="283" width="35" height="38" rx="3" fill="url(#metal)" stroke="#dce2dc"/><rect x="134" y="309" width="25" height="9" rx="2" fill="#27352f"/><text x="146.5" y="277" font-family="Arial,sans-serif" font-size="6" fill="#d8eacb" text-anchor="middle">HDMI 0</text><rect x="204" y="283" width="35" height="38" rx="3" fill="url(#metal)" stroke="#dce2dc"/><rect x="209" y="309" width="25" height="9" rx="2" fill="#27352f"/><text x="221.5" y="277" font-family="Arial,sans-serif" font-size="6" fill="#d8eacb" text-anchor="middle">HDMI 1</text><rect x="341" y="275" width="25" height="46" rx="2" fill="#161d1f"/><circle cx="353.5" cy="316" r="9" fill="#202527" stroke="#495251"/><circle cx="353.5" cy="316" r="5" fill="#080f12"/><rect x="116" y="99" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="119" y="99" width="6" height="5" rx="0" fill="#87755a"/><rect x="126" y="113" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="129" y="113" width="6" height="5" rx="0" fill="#87755a"/><rect x="113" y="240" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="116" y="240" width="6" height="5" rx="0" fill="#87755a"/><rect x="241" y="118" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="244" y="118" width="6" height="5" rx="0" fill="#87755a"/><rect x="307" y="124" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="310" y="124" width="6" height="5" rx="0" fill="#87755a"/><rect x="303" y="232" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="306" y="232" width="6" height="5" rx="0" fill="#87755a"/><rect x="57" y="261" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="60" y="261" width="6" height="5" rx="0" fill="#87755a"/><rect x="80" y="251" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="83" y="251" width="6" height="5" rx="0" fill="#87755a"/><rect x="264" y="272" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="267" y="272" width="6" height="5" rx="0" fill="#87755a"/><rect x="280" y="262" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="283" y="262" width="6" height="5" rx="0" fill="#87755a"/><rect x="367" y="151" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="370" y="151" width="6" height="5" rx="0" fill="#87755a"/><rect x="368" y="165" width="12" height="5" rx="1" fill="#a9aca4"/><rect x="371" y="165" width="6" height="5" rx="0" fill="#87755a"/><rect x="44" y="233" width="15" height="12" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="48" y="230" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="48" y="244" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="54" y="230" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="54" y="244" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="41" y="237" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="58" y="237" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="112" y="84" width="12" height="14" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="116" y="81" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="116" y="97" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="109" y="88" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="123" y="88" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="109" y="94" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="123" y="94" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="123" y="238" width="15" height="14" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="127" y="235" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="127" y="251" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="133" y="235" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="133" y="251" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="120" y="242" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="137" y="242" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="120" y="248" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="137" y="248" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="268" y="235" width="15" height="12" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="272" y="232" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="272" y="246" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="278" y="232" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="278" y="246" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="265" y="239" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="282" y="239" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="349" y="135" width="12" height="20" rx="2" fill="#161b20" stroke="#4b5658"/><rect x="353" y="132" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="353" y="154" width="2" height="4" rx="0" fill="#a1a9aa"/><rect x="346" y="139" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="360" y="139" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="346" y="145" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="360" y="145" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="346" y="151" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="360" y="151" width="4" height="2" rx="0" fill="#a1a9aa"/><rect x="32" y="274" width="5" height="8" rx="1" fill="#d85b48"/><rect x="32" y="260" width="5" height="8" rx="1" fill="#8cca53"/><text x="32" y="254" font-family="Arial,sans-serif" font-size="5" fill="#e4eedb" text-anchor="middle">ACT</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="330" viewBox="0 0 500 330">
+  <title>Raspberry Pi 4 Model B</title>
+  <defs>
+    <!-- 3D Brushed Aluminium Shield & Port Gradient -->
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0.45">
+      <stop offset="0" stop-color="#8b949e"/>
+      <stop offset="0.2" stop-color="#e5e7eb"/>
+      <stop offset="0.48" stop-color="#9ca3af"/>
+      <stop offset="0.76" stop-color="#f3f4f6"/>
+      <stop offset="1" stop-color="#6b7280"/>
+    </linearGradient>
+    <!-- Emerald Green PCB with 3D Lighting -->
+    <linearGradient id="green" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#229954"/>
+      <stop offset="0.55" stop-color="#196f3d"/>
+      <stop offset="1" stop-color="#0e4b27"/>
+    </linearGradient>
+    <linearGradient id="pcbEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#58d68d"/>
+      <stop offset="1" stop-color="#093019"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fef08a"/>
+      <stop offset="0.5" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#854d0e"/>
+    </linearGradient>
+    <linearGradient id="chipDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#282c34"/>
+      <stop offset="1" stop-color="#111418"/>
+    </linearGradient>
+    <filter id="elevate3d" x="-12%" y="-12%" width="135%" height="135%">
+      <feDropShadow dx="3" dy="5" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="smShadow" x="-15%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 1h4" stroke="#fff" stroke-opacity=".04" stroke-width=".4"/>
+    </pattern>
+  </defs>
+
+  <!-- 3D PCB Base Shadow & Thickness Extrusion -->
+  <rect x="9" y="11" width="477" height="308" rx="19" fill="#072614"/>
+  <rect x="5" y="5" width="477" height="308" rx="19" fill="url(#green)" stroke="url(#pcbEdge)" stroke-width="2.5"/>
+  <rect x="6" y="6" width="475" height="306" rx="18" fill="url(#grain)"/>
+
+  <!-- Gold Mounting Holes with 3D Inner Ring -->
+  <g>
+    <circle cx="24" cy="26" r="12.5" fill="url(#gold)"/>
+    <circle cx="24" cy="26" r="6.2" fill="#0d2217" stroke="#06170e" stroke-width="1.5"/>
+    <circle cx="362" cy="26" r="12.5" fill="url(#gold)"/>
+    <circle cx="362" cy="26" r="6.2" fill="#0d2217" stroke="#06170e" stroke-width="1.5"/>
+    <circle cx="24" cy="291" r="12.5" fill="url(#gold)"/>
+    <circle cx="24" cy="291" r="6.2" fill="#0d2217" stroke="#06170e" stroke-width="1.5"/>
+    <circle cx="362" cy="291" r="12.5" fill="url(#gold)"/>
+    <circle cx="362" cy="291" r="6.2" fill="#0d2217" stroke="#06170e" stroke-width="1.5"/>
+  </g>
+
+  <!-- Copper High-Speed Differential Traces -->
+  <g fill="none" stroke="#58d68d" stroke-opacity=".42" stroke-width="0.9">
+    <path d="M55 52v43l50 50v65"/><path d="M63 52v46l47 50v65"/><path d="M71 52v49l44 50v65"/>
+    <path d="M79 52v52l41 50v65"/><path d="M87 52v55l38 50v65"/><path d="M95 52v58l35 50v65"/>
+    <path d="M103 52v61l32 50v65"/><path d="M111 52v64l29 50v65"/><path d="M119 52v67l26 50v65"/>
+    <path d="M127 52v70l23 50v65"/><path d="M135 52v73l20 50v65"/><path d="M143 52v76l17 50v65"/>
+  </g>
+
+  <!-- 40-Pin GPIO Header Plastic Base (Aligned with interactive pins at left:45px, top:20px) -->
+  <g filter="url(#elevate3d)">
+    <rect x="40" y="16" width="310" height="36" rx="3" fill="#11161b" stroke="#374151" stroke-width="1.2"/>
+    <rect x="42" y="18" width="306" height="32" rx="2" fill="#182026"/>
+  </g>
+  <text x="35" y="14" font-family="monospace" font-size="7" font-weight="bold" fill="#e2e8f0" text-anchor="middle">1</text>
+  <text x="352" y="14" font-family="monospace" font-size="7" font-weight="bold" fill="#e2e8f0" text-anchor="middle">40</text>
+  <text x="195" y="64" font-family="monospace" font-size="8" font-weight="bold" fill="#d1fae5" letter-spacing="1.5" text-anchor="middle">40-PIN GPIO HEADER (J8)</text>
+
+  <!-- PoE 4-Pin Header -->
+  <g filter="url(#smShadow)">
+    <rect x="326" y="56" width="24" height="24" rx="2" fill="#11161b" stroke="#374151" stroke-width="1"/>
+    <circle cx="333" cy="63" r="2.5" fill="url(#gold)"/><circle cx="343" cy="63" r="2.5" fill="url(#gold)"/>
+    <circle cx="333" cy="73" r="2.5" fill="url(#gold)"/><circle cx="343" cy="73" r="2.5" fill="url(#gold)"/>
+    <text x="318" y="71" font-family="monospace" font-size="6" font-weight="bold" fill="#a7f3d0" text-anchor="end">PoE</text>
+  </g>
+
+  <!-- Dual-Band Wi-Fi / BLE Metal RF Shield -->
+  <g filter="url(#elevate3d)">
+    <rect x="37" y="70" width="66" height="72" rx="3" fill="#64748b" stroke="#f1f5f9" stroke-width="1"/>
+    <rect x="40" y="73" width="60" height="66" rx="2" fill="url(#metal)"/>
+    <path d="M62 96a11 11 0 0 1 16 0m-13 3a7 7 0 0 1 10 0" fill="none" stroke="#475569" stroke-width="1.2"/>
+    <text x="70" y="112" font-family="Arial,sans-serif" font-size="6.5" font-weight="bold" fill="#334155" text-anchor="middle">CYPRESS</text>
+    <text x="70" y="121" font-family="monospace" font-size="5.5" fill="#475569" text-anchor="middle">WLAN + BT 5.0</text>
+  </g>
+
+  <!-- Broadcom BCM2711 Quad-Core SoC with 3D Heatspreader -->
+  <g filter="url(#elevate3d)">
+    <rect x="147" y="135" width="84" height="84" rx="4" fill="#1f2937" stroke="#9ca3af" stroke-width="1.2"/>
+    <rect x="154" y="142" width="70" height="70" rx="3" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <text x="189" y="167" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#1e293b" text-anchor="middle">BROADCOM®</text>
+    <text x="189" y="182" font-family="monospace" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">BCM2711</text>
+    <text x="189" y="196" font-family="Arial,sans-serif" font-size="6.5" font-weight="bold" fill="#475569" text-anchor="middle">Cortex-A72 64-bit</text>
+  </g>
+
+  <!-- LPDDR4 SDRAM Package (3D Elevated IC) -->
+  <g filter="url(#elevate3d)">
+    <rect x="249" y="138" width="54" height="78" rx="3" fill="url(#chipDark)" stroke="#475569" stroke-width="1.2"/>
+    <circle cx="256" cy="145" r="2" fill="#64748b"/>
+    <text x="276" y="172" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="#cbd5e1" text-anchor="middle">LPDDR4</text>
+    <text x="276" y="185" font-family="monospace" font-size="7" font-weight="bold" fill="#94a3b8" text-anchor="middle">4GB SDRAM</text>
+  </g>
+
+  <!-- VL805 USB 3.0 & Gigabit Ethernet Controller Chips -->
+  <g filter="url(#smShadow)">
+    <rect x="325" y="92" width="34" height="34" rx="2" fill="url(#chipDark)" stroke="#475569" stroke-width="1"/>
+    <text x="342" y="111" font-family="monospace" font-size="5.5" font-weight="bold" fill="#94a3b8" text-anchor="middle">BCM54213</text>
+    <rect x="323" y="206" width="36" height="36" rx="2" fill="url(#chipDark)" stroke="#475569" stroke-width="1"/>
+    <text x="341" y="226" font-family="monospace" font-size="6" font-weight="bold" fill="#94a3b8" text-anchor="middle">VIA VL805</text>
+  </g>
+
+  <!-- Silkscreen Branding & Raspberry Pi Logo -->
+  <text x="228" y="88" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#ecfdf5" text-anchor="middle">Raspberry Pi 4 Model B</text>
+  <text x="228" y="102" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#a7f3d0" text-anchor="middle">© Raspberry Pi 2019 · ITENAS IoT Lab</text>
+  <g fill="none" stroke="#ecfdf5" stroke-width="2.2">
+    <ellipse cx="89" cy="181" rx="12" ry="16"/>
+    <ellipse cx="70" cy="181" rx="12" ry="16"/>
+    <ellipse cx="80" cy="202" rx="12" ry="13"/>
+    <path d="M80 164q-30-25-28-2 15 13 28 2 11-28 27-15-6 15-27 15"/>
+  </g>
+
+  <!-- Right Side: 3D Metallic Gigabit Ethernet & Dual USB 3.0 / USB 2.0 Stacks -->
+  <!-- Gigabit Ethernet -->
+  <g filter="url(#elevate3d)">
+    <rect x="390" y="16" width="104" height="88" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="398" y="22" width="88" height="76" rx="2" fill="url(#grain)" stroke="#9ca3af" stroke-width="0.6"/>
+    <rect x="468" y="26" width="26" height="68" rx="1.5" fill="#1e293b"/>
+    <rect x="473" y="33" width="16" height="54" rx="1" fill="#0f172a"/>
+    <rect x="486" y="28" width="4" height="10" rx="1" fill="#22c55e"/>
+    <rect x="486" y="82" width="4" height="10" rx="1" fill="#eab308"/>
+    <text x="432" y="63" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#334155" text-anchor="middle">GIGABIT ETH</text>
+  </g>
+  <!-- USB 3.0 Stack (Blue Tongues) -->
+  <g filter="url(#elevate3d)">
+    <rect x="390" y="122" width="104" height="76" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="398" y="128" width="88" height="64" rx="2" fill="url(#grain)" stroke="#9ca3af" stroke-width="0.6"/>
+    <rect x="468" y="132" width="26" height="56" rx="1.5" fill="#1e293b"/>
+    <rect x="473" y="137" width="16" height="20" rx="1" fill="#2563eb"/>
+    <rect x="473" y="163" width="16" height="20" rx="1" fill="#2563eb"/>
+    <text x="432" y="163" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#1e3a8a" text-anchor="middle">USB 3.0</text>
+  </g>
+  <!-- USB 2.0 Stack (Black Tongues) -->
+  <g filter="url(#elevate3d)">
+    <rect x="390" y="216" width="104" height="76" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1.2"/>
+    <rect x="398" y="222" width="88" height="64" rx="2" fill="url(#grain)" stroke="#9ca3af" stroke-width="0.6"/>
+    <rect x="468" y="226" width="26" height="56" rx="1.5" fill="#1e293b"/>
+    <rect x="473" y="231" width="16" height="20" rx="1" fill="#0f172a"/>
+    <rect x="473" y="257" width="16" height="20" rx="1" fill="#0f172a"/>
+    <text x="432" y="257" font-family="Arial,sans-serif" font-size="8.5" font-weight="bold" fill="#334155" text-anchor="middle">USB 2.0</text>
+  </g>
+
+  <!-- Left DSI Display & Center CSI Camera Ribbon Slots (3D Latch) -->
+  <g filter="url(#smShadow)">
+    <rect x="10" y="150" width="18" height="100" rx="2" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="18" y="154" width="8" height="92" rx="1" fill="#fef3c7"/>
+    <text x="34" y="200" font-family="monospace" font-size="6.5" font-weight="bold" fill="#d1fae5" text-anchor="middle" transform="rotate(-90 34 200)">DISPLAY (DSI)</text>
+
+    <rect x="292" y="234" width="18" height="74" rx="2" fill="#111827" stroke="#374151" stroke-width="1"/>
+    <rect x="297" y="237" width="8" height="68" rx="1" fill="#fef3c7"/>
+    <text x="285" y="271" font-family="monospace" font-size="6.5" font-weight="bold" fill="#d1fae5" text-anchor="middle" transform="rotate(-90 285 271)">CAMERA</text>
+  </g>
+
+  <!-- Bottom Edge: USB-C Power, Dual Micro-HDMI, 3.5mm Audio/AV Jack -->
+  <g filter="url(#elevate3d)">
+    <!-- USB-C Power -->
+    <rect x="46" y="282" width="48" height="40" rx="4" fill="url(#metal)" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="52" y="310" width="36" height="9" rx="3" fill="#0f172a"/>
+    <text x="70" y="276" font-family="monospace" font-size="6.5" font-weight="bold" fill="#ecfdf5" text-anchor="middle">PWR IN (USB-C)</text>
+    <!-- Micro-HDMI 0 -->
+    <rect x="128" y="282" width="36" height="40" rx="3" fill="url(#metal)" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="133" y="310" width="26" height="9" rx="2" fill="#0f172a"/>
+    <text x="146" y="276" font-family="monospace" font-size="6.5" font-weight="bold" fill="#ecfdf5" text-anchor="middle">HDMI 0</text>
+    <!-- Micro-HDMI 1 -->
+    <rect x="204" y="282" width="36" height="40" rx="3" fill="url(#metal)" stroke="#f8fafc" stroke-width="1"/>
+    <rect x="209" y="310" width="26" height="9" rx="2" fill="#0f172a"/>
+    <text x="222" y="276" font-family="monospace" font-size="6.5" font-weight="bold" fill="#ecfdf5" text-anchor="middle">HDMI 1</text>
+    <!-- 3.5mm AV Jack -->
+    <rect x="328" y="272" width="28" height="48" rx="3" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+    <circle cx="342" cy="316" r="9" fill="#27272a" stroke="#71717a" stroke-width="1.5"/>
+    <circle cx="342" cy="316" r="5" fill="#09090b"/>
+  </g>
+
+  <!-- Status LEDs (PWR Red & ACT Green) -->
+  <rect x="30" y="274" width="6" height="9" rx="1.5" fill="#ef4444" stroke="#fca5a5" stroke-width="0.8"/>
+  <rect x="30" y="259" width="6" height="9" rx="1.5" fill="#22c55e" stroke="#86efac" stroke-width="0.8"/>
+  <text x="33" y="254" font-family="monospace" font-size="5.5" font-weight="bold" fill="#ecfdf5" text-anchor="middle">ACT</text>
+</svg>

@@ -1,0 +1,251 @@
+/* Comprehensive 3D-styled IoT Sensor & Actuator Suite for ESP32, Arduino, Raspberry Pi, and Jetson Nano */
+.lab-sensor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 12px 12px;
+  gap: 8px;
+  min-width: 155px;
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  border-radius: 0 0 8px 8px;
+}
+.lab-sensor-visual {
+  position: relative;
+  width: 128px;
+  height: 68px;
+  border-radius: 8px;
+  background: radial-gradient(circle at 30% 25%, #334155, #0f172a 85%);
+  border: 1.5px solid #475569;
+  box-shadow: inset 0 2px 6px rgba(255,255,255,0.08), 0 6px 14px rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.lab-sensor-badge {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  font: 700 9px monospace;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+.lab-sensor-readout {
+  font: 700 11px monospace;
+  color: #f8fafc;
+  background: #090d16;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  padding: 3px 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: inset 0 1px 3px #000;
+}
+.lab-sensor-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lab-sensor-controls label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 600 10px system-ui, sans-serif;
+  color: #cbd5e1;
+}
+.lab-sensor-controls input[type="range"] {
+  width: 100%;
+  height: 5px;
+  accent-color: #38bdf8;
+  cursor: pointer;
+}
+.lab-sensor-toggle {
+  width: 100%;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  font: 700 10px system-ui, sans-serif;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.lab-sensor-toggle.active {
+  background: #16a34a;
+  border-color: #86efac;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.45);
+}
+.lab-sensor-pins {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 6px;
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px dashed #334155;
+}
+.lab-sensor-pin-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.lab-sensor-pin-col .pin-label {
+  font: 700 9px monospace;
+}
+
+/* Specific 3D Sensor Graphics */
+/* HC-SR04 Dual Ultrasonic Eyes */
+.ultrasonic-eyes {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.ultrasonic-eye {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: conic-gradient(from 45deg, #94a3b8, #f1f5f9, #64748b, #e2e8f0, #94a3b8);
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.6), inset 0 0 6px #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ultrasonic-eye::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #1e293b 30%, #475569 70%);
+  border: 1px dashed #94a3b8;
+}
+
+/* PIR Fresnel Dome */
+.pir-dome {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffffff, #cbd5e1 65%, #64748b 100%);
+  border: 2px solid #94a3b8;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5), inset -3px -3px 8px rgba(0,0,0,0.25);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.pir-dome.motion {
+  background: radial-gradient(circle at 35% 35%, #fef08a, #f97316 70%, #dc2626 100%);
+  box-shadow: 0 0 22px #f97316, inset -2px -2px 6px rgba(0,0,0,0.3);
+}
+
+/* Soil Moisture Fork Probes */
+.soil-probes {
+  display: flex;
+  gap: 18px;
+  align-items: flex-end;
+  height: 52px;
+}
+.soil-prong {
+  width: 12px;
+  height: 46px;
+  background: linear-gradient(180deg, #ca8a04 0%, #fde047 50%, #a16207 100%);
+  border: 1px solid #fef08a;
+  border-radius: 2px 2px 6px 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* MQ-2 Stainless Mesh Dome */
+.mq2-mesh {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.35), transparent 60%),
+    repeating-linear-gradient(45deg, #64748b 0 2px, #334155 2px 4px),
+    repeating-linear-gradient(-45deg, #64748b 0 2px, #475569 2px 4px);
+  border: 3px solid #cbd5e1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+.mq2-mesh.alert {
+  border-color: #ef4444;
+  box-shadow: 0 0 18px #ef4444;
+}
+
+/* Servo SG90 Horn Rotation */
+.servo-body-3d {
+  width: 86px;
+  height: 44px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: 1.5px solid #60a5fa;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.servo-horn {
+  width: 52px;
+  height: 12px;
+  background: #f8fafc;
+  border: 1.5px solid #94a3b8;
+  border-radius: 6px;
+  transform-origin: 12px 50%;
+  transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  position: relative;
+}
+.servo-horn::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #334155;
+}
+
+/* Relay Module */
+.relay-box {
+  width: 78px;
+  height: 46px;
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  border: 1.5px solid #60a5fa;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 700 9px monospace;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.relay-led {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #450a0a;
+  border: 1px solid #7f1d1d;
+  margin-top: 4px;
+}
+.relay-box.on .relay-led {
+  background: #22c55e;
+  border-color: #bbf7d0;
+  box-shadow: 0 0 10px #22c55e;
+}
+
+/* Light theme compatibility */
+html[data-theme="light"] .lab-sensor-card {
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%) !important;
+}
+html[data-theme="light"] .lab-sensor-controls label {
+  color: #1e293b !important;
+}
+html[data-theme="light"] .lab-sensor-readout {
+  background: #0f172a !important;
+  color: #38bdf8 !important;
+}

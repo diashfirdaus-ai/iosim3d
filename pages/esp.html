@@ -517,7 +517,7 @@
             opacity: 1;
         }
     </style>
-<link rel="stylesheet" href="/flat.css"><script src="/bridge.js"></script><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/resistor.css"><script src="/resistor.js"></script><script src="/arduino-syntax.js"></script></head>
+<link rel="stylesheet" href="/flat.css"><script src="/bridge.js"></script><link rel="stylesheet" href="/theme.css"><link rel="stylesheet" href="/resistor.css"><script src="/resistor.js"></script><link rel="stylesheet" href="/sensors.css"><script src="/sensors.js"></script><script src="/arduino-syntax.js"></script><link rel="stylesheet" href="/board3d.css"><script defer src="/board3d.js"></script></head>
 
 <body>
 
@@ -1237,8 +1237,14 @@ void loop() {
                 lcdi2c: (uid) => `<div class="btn-delete-comp"><i class="fas fa-times"></i></div><div class="component-header"><i class="fas fa-desktop text-green-500"></i> LCD 16x2 I2C</div><div class="component-body" style="flex-direction: column; align-items: center;"><div class="lcd-board"><div class="lcd-screen" id="lcd-vis-${uid}"><div class="lcd-row" id="lcd-row-0-${uid}"></div><div class="lcd-row" id="lcd-row-1-${uid}"></div></div></div><div class="flex justify-center gap-4 w-full mt-3"><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-gray-400">GND</span><div class="pin" data-pin-id="lcd_gnd_${uid}" data-pin-name="gnd"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-red-400">VCC</span><div class="pin" data-pin-id="lcd_vcc_${uid}" data-pin-name="vcc"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-blue-300">SDA</span><div class="pin" data-pin-id="lcd_sda_${uid}" data-pin-name="sda"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-yellow-300">SCL</span><div class="pin" data-pin-id="lcd_scl_${uid}" data-pin-name="scl"></div></div></div></div></div>`,
                 oled: (uid) => `<div class="btn-delete-comp"><i class="fas fa-times"></i></div><div class="component-header"><i class="fas fa-mobile-alt text-cyan-400"></i> SSD1306 OLED</div><div class="component-body" style="flex-direction: column; align-items: center;"><div class="oled-board"><div class="oled-screen" id="oled-vis-${uid}">SYSTEM INIT...<br>I2C ADDR 0x3C<br>WIFI CONNECTED</div></div><div class="flex justify-center gap-3 w-full mt-3"><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-gray-400">GND</span><div class="pin" data-pin-id="oled_gnd_${uid}" data-pin-name="gnd"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-red-400">VCC</span><div class="pin" data-pin-id="oled_vcc_${uid}" data-pin-name="vcc"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-yellow-300">SCL</span><div class="pin" data-pin-id="oled_scl_${uid}" data-pin-name="scl"></div></div></div><div class="pin-group"><div class="pin-row flex-col"><span class="pin-label text-blue-300">SDA</span><div class="pin" data-pin-id="oled_sda_${uid}" data-pin-name="sda"></div></div></div></div></div>`
             };
+            if (window.LabSensors) {
+                window.LabSensors.registerTemplates(componentTemplates);
+                window.LabSensors.injectSidebarPalette(document.getElementById('sidebar'));
+                window.LabSensors.installRuntimeAPIs(window, () => state, () => evaluateCircuit());
+            }
 
             window.spawnComponent = function (type, x, y, fixedUid = null, value = null, color = null) {
+                if (!componentTemplates[type]) return null;
                 const uid = fixedUid || Date.now().toString() + Math.floor(Math.random() * 1000);
                 const el = document.createElement('div');
                 el.className = 'component';
@@ -1260,7 +1266,11 @@ void loop() {
                 }
 
                 if (type === 'resistor') window.LabResistor.configure(el, value);
+                if (window.LabSensors && (type === 'dht22' || window.LabSensors.CATALOG[type])) {
+                    window.LabSensors.configure(el, value);
+                }
                 workspace.appendChild(el);
+                return el;
             };
 
             // --- 2. DRAG & DROP UI LOGIC ---
@@ -1662,6 +1672,9 @@ void loop() {
                 js = js.replace(/\bOUTPUT\b/g, '1'); js = js.replace(/\bINPUT\b/g, '0'); js = js.replace(/\bINPUT_PULLUP\b/g, '0');
 
                 js = js.replace(/\bA([0-5])\b/g, '"a$1"');
+                if (window.LabSensors && window.LabSensors.transpileArduinoSensors) {
+                    js = window.LabSensors.transpileArduinoSensors(js);
+                }
 
                 return js;
             }
@@ -1732,7 +1745,7 @@ void loop() {
 
             // --- 5. SIRKUIT EVALUATOR ---
             function evaluateCircuit() {
-                document.querySelectorAll('.component[data-type="esp32"] .pin, .component[data-type="raspi"] .pin').forEach(pin => {
+                document.querySelectorAll('.component[data-type="esp32"] .pin, .component[data-type="arduino"] .pin, .component[data-type="raspi"] .pin').forEach(pin => {
                     const value = state.hw.pins[pin.dataset.pinName];
                     pin.dataset.level = value === 1 ? 'high' : value === 0 ? 'low' : 'floating';
                     pin.title = `${pin.dataset.pinName}: ${value === undefined ? 'belum diatur' : value}`;
@@ -1845,6 +1858,9 @@ void loop() {
                         else { screen.classList.remove('on'); if (type === 'lcdi2c') { document.getElementById(`lcd-row-0-${uid}`).innerText = ''; document.getElementById(`lcd-row-1-${uid}`).innerText = ''; } }
                     });
                 });
+                if (window.LabSensors && window.LabSensors.evaluate) {
+                    window.LabSensors.evaluate(state, document);
+                }
             }
 
             window.addEventListener('resize', renderWires);
